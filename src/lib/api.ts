@@ -8,9 +8,9 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
-import rehypeShiki from "@leafac/rehype-shiki";
 import getReadingTime from "reading-time";
 import * as shiki from "shiki";
+import { rehypeShiki } from "@/lib/rehype-shiki";
 
 // memoize/cache the creation of the markdown parser, this sped up the
 // building of the blog from ~60s->~10s

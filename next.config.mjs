@@ -5,6 +5,9 @@
 await import("./src/env.mjs");
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+  output: 'export',
+  skipTrailingSlashRedirect: true,
+};
 
 export default config;
