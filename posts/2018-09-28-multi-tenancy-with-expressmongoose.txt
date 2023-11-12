@@ -1,0 +1,233 @@
+1:HL["/_next/static/css/9d8f288a99c54fb3.css","style",{"crossOrigin":""}]
+0:["AzO8YmqLI-jVS4hv3vlbF",[[["",{"children":["posts",{"children":[["slug","2018-09-28-multi-tenancy-with-expressmongoose","d"],{"children":["__PAGE__?{\"slug\":\"2018-09-28-multi-tenancy-with-expressmongoose\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/9d8f288a99c54fb3.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:I[2286,["736","static/chunks/736-93d26bf9f492bada.js","545","static/chunks/545-972397648c423446.js","871","static/chunks/871-e93f475163439fcd.js","185","static/chunks/app/layout-58152a9375fe786b.js"],"ThemeProvider"]
+5:I[7019,["736","static/chunks/736-93d26bf9f492bada.js","545","static/chunks/545-972397648c423446.js","871","static/chunks/871-e93f475163439fcd.js","185","static/chunks/app/layout-58152a9375fe786b.js"],"Header"]
+6:I[3849,[],""]
+7:I[8656,[],""]
+8:I[4736,["736","static/chunks/736-93d26bf9f492bada.js","991","static/chunks/app/posts/page-6d06c0c42f2ef9eb.js"],""]
+2:[null,["$","html",null,{"lang":"en","className":"h-full antialiased","suppressHydrationWarning":true,"children":["$","body",null,{"className":"flex h-full","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":["$","div",null,{"className":"flex w-full","children":["$","div",null,{"className":"relative flex w-full flex-col","children":[["$","$L5",null,{}],["$","main",null,{"className":"flex-auto","children":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"className":"sm:px-8 flex h-full items-center pt-16 sm:pt-32","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"flex flex-col items-center","children":[["$","p",null,{"className":"text-base font-semibold text-zinc-400 dark:text-zinc-500","children":"404"}],["$","h1",null,{"className":"mt-4 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl","children":"Page not found"}],["$","p",null,{"className":"mt-4 text-base text-zinc-600 dark:text-zinc-400","children":"Sorry, we couldn’t find the page you’re looking for."}],["$","$L8",null,{"href":"/","children":["$","button",null,{"className":"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-4","children":"Go back home"}]}]]}]}]}]}]}],"notFoundStyles":[],"childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children",["slug","2018-09-28-multi-tenancy-with-expressmongoose","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L9","$La",null],"segment":"__PAGE__?{\"slug\":\"2018-09-28-multi-tenancy-with-expressmongoose\"}"},"styles":null}],"segment":["slug","2018-09-28-multi-tenancy-with-expressmongoose","d"]},"styles":null}],"segment":"posts"},"styles":null}]}],["$","footer",null,{"className":"mt-32 flex-none","children":["$","div",null,{"className":"sm:px-8","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"pb-16 pt-10","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"flex flex-col items-center justify-between gap-6 sm:flex-row","children":[["$","div",null,{"className":"flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200","children":[["$","$L8",null,{"href":"/about","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"About"}],["$","$L8",null,{"href":"/projects","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Projects"}],["$","$L8",null,{"href":"/speaking","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Speaking"}],["$","$L8",null,{"href":"/uses","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Uses"}]]}],["$","p",null,{"className":"text-sm text-zinc-400 dark:text-zinc-500","children":["© ",2023," Spencer Sharp. All rights reserved."]}]]}]}]}]}]}]}]}]]}]}]}]}]}],null]
+b:T3d14,<p>Adding this kind of layer to apps is really useful and powerful and can really level up some apps.</p>
+<p>The most important thing with multi tenant apps is that the data isolation must be perfect. If a user ever sees data not related to their tenant, it can result it a huge loss of customer trust especially these days when user data is such a hot issue.</p>
+<p>We should NOT rely on developers writing queries and logic to keep this data isolation, so the best thing to do is to tackle this at a high level with powerful patterns.</p>
+<p>Here's a possible implementation:</p>
+<p>The plan:</p>
+<ul>
+<li><strong>Continuation-Local Storage</strong> - Use <a href="">this library</a> to easily give every function access to the current tenant at all times.</li>
+<li><strong>Express Middleware</strong> - Add express middleware that will tell set the current tenent for every request.</li>
+<li><strong>Mongoose Discriminator</strong> - For every tenant create an on-the-fly discriminator model, so all actions performed by the model are in the context of the current tenant.</li>
+<li><strong>Model Wrapper</strong> - Add a wrapper around Mongoose models so that every time that model is used it actually gets a different version of the model specific to the current tenant.</li>
+</ul>
+<p>I'm assuming you have a basic understanding of express and mongoose.</p>
+<h3 id="continuation-local-storage"><a aria-hidden="true" tabindex="-1" href="#continuation-local-storage"><a href="#continuation-local-storage" style="margin-right: 10px">#</a></a>Continuation-Local Storage</h3>
+<p>I recently found this great library called <a href="https://github.com/othiym23/node-continuation-local-storage" title="https://github.com/othiym23/node-continuation-local-storage">node-continuation-local-storage</a>. Basically you can think of most things in javascript as a chain of functions calling functions. What this library does is lets you define variables at the beginning of the function chain, and then every function further down the chain has access to those variables.</p>
+<p>The first thing we'll do is set this library up with express. We do that by first binding the context using an express middleware function, this gives continuous-local-storage a namespace and context to store our variables.</p>
+<p>Lets create a file called <code>lib/storage.js</code> and create an express middleware function to bind the storage context as well as a few exportable getter and setter functions for our <code>tenantId</code> variable.</p>
+<pre><code>// lib/storage.js
+import { createNamespace } from 'continuation-local-storage';
+
+const namespaceName = 'request';
+const ns = createNamespace(namespaceName);
+
+export function bindCurrentNamespace(req, res, next) {
+  ns.bindEmitter(req);
+  ns.bindEmitter(res);
+
+  ns.run(() => {
+    next();
+  });
+}
+
+export function setCurrentTenantId(tenantId) {
+  return ns.set('tenantId', tenantId);
+}
+
+export function getCurrentTenantId() {
+  return ns.get('tenantId');
+}
+</code></pre>
+<p>Now inside your express bootstrap file, usually called <code>app.js</code> we add the <code>bindCurrentNamespace</code> middleware.</p>
+<pre><code>// app.js
+
+import { bindCurrentNamespace } from 'lib/storage';
+
+app.use(bindCurrentNamespace);
+</code></pre>
+<p>This creates a context that every express request can use.</p>
+<p>Next we'll add another middleware function that will use our <code>setCurrentTenantId</code> function to set that data for every other function in the chain.</p>
+<h3 id="express-middleware"><a aria-hidden="true" tabindex="-1" href="#express-middleware"><a href="#express-middleware" style="margin-right: 10px">#</a></a>Express Middleware</h3>
+<p>No here is where you'll probably want to tie into any existing authentication system you have. Basically we need to someone figure out which user each request comes from.</p>
+<p>Some of the most common approaches here is to connect it with a session or use a bearer token with each request. But this is one area where many people will have different implementations.</p>
+<p>We nee to figure out which user the request is connected to, and once we have the user, you should be able to tell which tenant the user belongs to:</p>
+<pre><code>// app.js
+
+import { bindCurrentNamespace, setCurrentTenantId } from 'lib/storage';
+
+app.use(bindCurrentNamespace);
+app.use((req, res, next) => {
+  // Get current user from session or token
+  const user = req.user
+  
+  // Get current tenant from user here
+  // Make sure its a string
+  const tenantId = user.organization._id.toString()
+  
+  setCurrentTenantId('tenantId', tenantId);
+  next();
+});
+</code></pre>
+<p>There you have it. Now every function for every request will have access to the current tenant of the user making the request. We'll next use this behavior to bind our models to the tenant context.</p>
+<h3 id="mongoose-discriminator"><a aria-hidden="true" tabindex="-1" href="#mongoose-discriminator"><a href="#mongoose-discriminator" style="margin-right: 10px">#</a></a>Mongoose Discriminator</h3>
+<p>So here is where the magic happens. Lets create a new file called <code>lib/multiTenant.js</code> this file is going to export some higher order functions that will wrap every model with a discriminator based on the tenant id.</p>
+<pre><code>// lib/multiTenant.js
+
+import mongoose, { Schema } from 'mongoose';
+import { getCurrentTenantId } from './storage';
+
+export function tenantModel(name, schema, options) {
+  return (props = {}) => {
+    schema.add({ tenantId: String });
+    const Model = mongoose.model(name, schema, options);
+
+    const { skipTenant } = props;
+    if (skipTenant) return Model;
+
+    Model.schema.set('discriminatorKey', 'tenantId');
+
+    const tenantId = getCurrentTenantId();
+    const discriminatorName = `${Model.modelName}-${tenantId}`;
+    const existingDiscriminator = (Model.discriminators || {})[discriminatorName];
+    return existingDiscriminator || Model.discriminator(discriminatorName, new Schema({}));
+  };
+}
+
+export function tenantlessModel(name, schema, options) {
+  return () => mongoose.model(name, schema, options);
+}
+</code></pre>
+<p>You'll notice we have two exported higher order functions. If you're unfamiliar with <a href="https://eloquentjavascript.net/05_higher_order.html" title="https://eloquentjavascript.net/05_higher_order.html">higher order functions</a>, they are basically just functions that return other functions. Its a very powerful and often used pattern in javascript.</p>
+<p>The function <code>tenantlessModel</code> is basically just a passthrough function. We can use this function on any model that should not be tenant-isolated. One of the main examples of this is our tenant model itself which we have been calling <code>organization</code>. So our <code>organization</code> model will use this function.</p>
+<p>The other function is where all the magic happens. <code>tenantModel</code> exports another function. And that function returns a modified mongoose model or discriminator.</p>
+<p>Lets break down the code section by section:</p>
+<pre><code>schema.add({ [tenantKey]: String });
+const Model = mongoose.model(name, schema, options);
+</code></pre>
+<p>In this line we're just adding a new attribute to the model schema to hold our <code>tenantId</code>.</p>
+<pre><code>const { skipTenant } = props;
+if (skipTenant) return Model;
+</code></pre>
+<p>This is just a useful feature. This allows us to easily bypass our tenant isolation whenever we want. I've found this particularly useful in testing. But also for things like looking up the user during authentication when its important to be able to search for all users in the database.</p>
+<p>But this makes it so the norm is the tenant isolation, and we have to explicitly override it if we want access to all the models in the database.</p>
+<pre><code>Model.schema.set('discriminatorKey', 'tenantId');
+</code></pre>
+<p>This is pretty basic, we're just telling the model to use the field <code>'tenantId'</code> as the discriminator key.</p>
+<pre><code>const tenantId = getCurrentTenantId();
+const discriminatorName = `${Model.modelName}-${tenantId}`;
+const existingDiscriminator = (Model.discriminators || {})[discriminatorName];
+return existingDiscriminator || Model.discriminator(discriminatorName, new Schema({}));
+</code></pre>
+<p>Here is where we actually build a new discriminator based on the current tenant.</p>
+<p>Remember discriminators are basically just augmented mongoose models. The common use case is when you want to simulate model inheritance and basically have one model be the same as another but with extra behavior. The discriminator name is the name of the new augmented model. We're sort of hacking this feature for its built in data isolation.</p>
+<p>We're basically telling mongoose that there will be a different version of each model for each tenant. So if a user belongs to the tenant with the id of <code>123456</code> and we want to find all the documents in a model called <code>page</code> then we're not looking up all the <code>page</code>s we're looking up all the <code>page-123456</code>s.</p>
+<p>That is why we have to set the model name to <code>${Model.modelName}-${tenantId}</code> because we cant have multiple models with the same name.</p>
+<p>Then its important to check if the model name already exists so we don't end up creating multiple versions of the same discriminator. Also mongoose will yell at you if you try. So that is what this line is about:</p>
+<pre><code>const existingDiscriminator = (Model.discriminators || {})[discriminatorName];
+</code></pre>
+<h3 id="model-wrapper"><a aria-hidden="true" tabindex="-1" href="#model-wrapper"><a href="#model-wrapper" style="margin-right: 10px">#</a></a>Model Wrapper</h3>
+<p>So now that we have these higher order functions we have to user them to wrap our existing mongoose models. This is actually pretty easy. Here are a couple examples:</p>
+<pre><code>// models/page.js
+import { tenantModel } from '../lib/multiTenant';
+
+const PageSchema = new Schema({
+  title: String,
+  body: String,
+});
+
+export default tenantModel('page', PageSchema);
+</code></pre>
+<p>And:</p>
+<pre><code>// models/user.js
+import { tenantModel } from '../lib/multiTenant';
+
+const UserSchema = new Schema({
+  name: String,
+  email: String,
+});
+
+export default tenantModel('user', UserSchema);
+</code></pre>
+<p>You'll notice that its exactly the same as making and exporting a regular mongoose model except instead of exporting <code>mongoose.model</code> we are exporting our own <code>tenantModel</code> function.</p>
+<p>Then for models that you want to live outside the tenant isolation you can do this:</p>
+<pre><code>// models/organization.js
+
+import { tenantlessModel } from '../lib/multiTenant';
+
+const OrganizationSchema = new Schema({
+  name: String,
+});
+
+export default tenantlessModel('organization', OrganizationSchema);
+</code></pre>
+<p>Since the <code>tenantlessModel</code> is just a passthrough, its not totally necessary. But I chose to do it because as you will see below, our usage of higher order functions changes how we actually use our models in the rest of our code. So the <code>tenantlessModel</code> function makes the usage standardized for all our models regardless of if they are isolated based on the current tenant.</p>
+<h3 id="usage"><a aria-hidden="true" tabindex="-1" href="#usage"><a href="#usage" style="margin-right: 10px">#</a></a>Usage</h3>
+<p>Now this does change how we actually use our models in the rest of our code. Because our default export in our models are higher order functions, we have to execute the returned function before we use each model.</p>
+<p>For example we can NO LONGER DO THIS:</p>
+<pre><code>Page.find({})
+</code></pre>
+<p>Instead we have to do this:</p>
+<pre><code>Page().find({})
+</code></pre>
+<p>But this actually turns out to be pretty useful. Remember that <code>skipTenant</code> thing before? We can actually pass options into our model function like <code>skipTenant</code> to customize our access to the model even further.</p>
+<p>For example to search EVERY user in our database, not just the ones associated with our current tenant we can do this:</p>
+<pre><code>User({ skipTenant: true }).find({ _id: '123456' })
+</code></pre>
+<h3 id="benefits"><a aria-hidden="true" tabindex="-1" href="#benefits"><a href="#benefits" style="margin-right: 10px">#</a></a>Benefits</h3>
+<p>You'll notice that this implementation really doesn't require a lot of code.</p>
+<p>It also gives us a lot of useful abstraction layers to add extra behavior to our models.</p>
+<p>But, whats really great about this approach is that because we are always dealing with tenant isolated versions of every model, then any model that is created by a logged in user is <strong>automatically</strong> assigned to the correct tenant.</p>
+<p>And all queries and lookups are <strong>automatically</strong> isolated to the tenant.</p>
+<p>And it is basically nearly impossible for a user to view, list, update, create, or delete any model outside their own tenant because any mongoose function used to perform those actions is isolated to the users tenant from the get go.</p>
+<p>We don't have to rely on developers coding correct logic. And we can easily add other authentication logic on top of it and be confident our tenant isolation is secure.</p>
+<h3 id="extra-customization"><a aria-hidden="true" tabindex="-1" href="#extra-customization"><a href="#extra-customization" style="margin-right: 10px">#</a></a>Extra Customization</h3>
+<p>Because our higher order functions have access to the schema of each model, we can do lots of things to our models. For example we can add new middleware to any model that has a tenant. Here's just one simple example of making sure every <code>tenantModel</code> has a tenant using the before save mongoose middleware:</p>
+<pre><code>export function tenantModel(name, schema, options) {
+  return (props = {}) => {
+    schema.add({ tenantId: String });
+
+    schema.pre('save', function (next) {
+      if (!this.tenantId) {
+        const defaultTenantId = // find tenant
+        this.tenantId = defaultTenantId;
+      }
+    });
+  
+    const Model = mongoose.model(name, schema, options);
+
+    // ...
+  };
+}
+</code></pre>
+<p>You can also insert some authorization logic in here. For example you could set the current user using Continuation-Local Storage and then if the user is an admin, return the unmodified model, like this:</p>
+<pre><code>import { getCurrentTenantId, getCurrentUser } from './storage';
+
+export function tenantModel(name, schema, options) {
+  return (props = {}) => {
+    schema.add({ tenantId: String });
+    const Model = mongoose.model(name, schema, options);
+
+    if (getCurrentUser().isAdmin()) return Model;
+
+	// ...
+  };
+}
+</code></pre>
+<h3 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><a href="#conclusion" style="margin-right: 10px">#</a></a>Conclusion</h3>
+<p>I hope this at least gives you some ideas of how to add a solid multi-tenant layer in your express/mongoose app.</p>
+<p>As always, if you notice any problems in my code or flaws in my approach, please let me know. I'm always looking to learn and improve.</p>
+<p>Thanks for reading!</p>
+<p>Thanks to these libraries for inspiration:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/mongoose-multitenant" title="https://www.npmjs.com/package/mongoose-multitenant">https://www.npmjs.com/package/mongoose-multitenant</a></li>
+<li><a href="https://www.npmjs.com/package/mongoose-multitenant" title="https://www.npmjs.com/package/mongoose-multitenant">https://www.npmjs.com/package/mongoose-multitenancy</a></li>
+</ul>a:["$","div",null,{"className":"sm:px-8 post mt-16 lg:mt-32","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"xl:relative","children":["$","div",null,{"className":"mx-auto max-w-2xl","children":["$","article",null,{"children":[["$","header",null,{"className":"flex flex-col","children":[["$","h1",null,{"className":"text-4xl font-bold font-bold tracking-tight sm:text-5xl","children":"Multi Tenancy with Express/Mongoose"}],["$","div",null,{"className":"flex gap-3 pt-1","children":[["$","time",null,{"dateTime":"2018-10-03","className":"text-muted-foreground order-first flex items-center pr-2 text-base","children":[["$","span",null,{"className":"h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"}],["$","span",null,{"className":"ml-3","children":"October 3, 2018"}]]}],["$","span",null,{"className":"text-muted-foreground","children":"-"}],[["$","span","mongoose",{"className":"text-muted-foreground/80","children":"mongoose"}],["$","span","express",{"className":"text-muted-foreground/80","children":"express"}],["$","span","node",{"className":"text-muted-foreground/80","children":"node"}],["$","span","javascript",{"className":"text-muted-foreground/80","children":"javascript"}]]]}],["$","div",null,{"className":"text-accent-foreground pt-3 text-sm italic","children":["~","10 min read"]}]]}],["$","div",null,{"className":"mt-8 prose dark:prose-invert","data-mdx-content":true,"children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}]}]]}]}]}]}]}]}]}]
+3:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Multi Tenancy with Express/Mongoose - Spencer Sharp"}],["$","meta","3",{"name":"description","content":"I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."}],["$","link","4",{"rel":"alternate","type":"application/rss+xml","href":"undefined/feed.xml"}]]
+9:null

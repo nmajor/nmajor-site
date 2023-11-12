@@ -1,0 +1,302 @@
+<!DOCTYPE html><html lang="en" class="h-full antialiased"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" imageSrcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=16&amp;q=75 16w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=32&amp;q=75 32w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=48&amp;q=75 48w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=64&amp;q=75 64w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=96&amp;q=75 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=128&amp;q=75 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=256&amp;q=75 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=384&amp;q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=3840&amp;q=75 3840w" imageSizes="2.25rem" fetchPriority="high"/><link rel="stylesheet" href="/_next/static/css/9d8f288a99c54fb3.css" crossorigin="" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-113544170b8b14d7.js" crossorigin=""/><script src="/_next/static/chunks/de8a8aed-ff24f23ca546a20c.js" async="" crossorigin=""></script><script src="/_next/static/chunks/362-edde6a9467fb7f3f.js" async="" crossorigin=""></script><script src="/_next/static/chunks/main-app-dca2b37e6b098eb8.js" async="" crossorigin=""></script><script src="/_next/static/chunks/736-93d26bf9f492bada.js" async=""></script><script src="/_next/static/chunks/545-972397648c423446.js" async=""></script><script src="/_next/static/chunks/871-e93f475163439fcd.js" async=""></script><script src="/_next/static/chunks/app/layout-58152a9375fe786b.js" async=""></script><script src="/_next/static/chunks/app/posts/page-6d06c0c42f2ef9eb.js" async=""></script><title>Robust Serverless API Boilerplate with ES6, Folder Structure, Testing (Mocha + Chai), and ESLint - Spencer Sharp</title><meta name="description" content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."/><link rel="alternate" type="application/rss+xml" href="undefined/feed.xml"/><script src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" crossorigin="" noModule=""></script></head><body class="flex h-full"><script>!function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&true)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}if(e==='light'||e==='dark')d.style.colorScheme=e}catch(e){}}()</script><div class="flex w-full"><div class="relative flex w-full flex-col"><header class="pointer-events-none relative z-50 flex flex-none flex-col" style="height:var(--header-height);margin-bottom:var(--header-mb)"><div class="top-0 z-10 h-16 pt-6" style="position:var(--header-position)"><div class="sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full" style="position:var(--header-inner-position)"><div class="mx-auto w-full max-w-7xl lg:px-8"><div class="relative px-4 sm:px-8 lg:px-12"><div class="mx-auto max-w-2xl lg:max-w-5xl"><div class="relative flex gap-4"><div class="flex flex-1"><div class="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10"><a aria-label="Home" class="pointer-events-auto" href="/"><img alt="" fetchPriority="high" width="1000" height="1000" decoding="async" data-nimg="1" class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-9 w-9" style="color:transparent" sizes="2.25rem" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=16&amp;q=75 16w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=32&amp;q=75 32w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=48&amp;q=75 48w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=64&amp;q=75 64w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=96&amp;q=75 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=128&amp;q=75 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=256&amp;q=75 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=384&amp;q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=3840&amp;q=75 3840w" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.6206df77.jpg&amp;w=3840&amp;q=75"/></a></div></div><div class="flex flex-1 justify-end md:justify-center"><nav class="pointer-events-auto hidden md:block"><ul class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"><li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="/about">About</a></li><li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="/posts">Blog</a></li><li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="/projects">Projects</a></li></ul></nav></div><div class="flex justify-end md:flex-1"><div class="pointer-events-auto"><button class="inline-flex items-center justify-center text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-md h-8 w-8 px-0" type="button" id="radix-:R75la:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"><circle cx="12" cy="12" r="4"></circle><path d="M12 3v1"></path><path d="M12 20v1"></path><path d="M3 12h1"></path><path d="M20 12h1"></path><path d="m18.364 5.636-.707.707"></path><path d="m6.343 17.657-.707.707"></path><path d="m5.636 5.636.707.707"></path><path d="m17.657 17.657.707.707"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg><span class="sr-only">Toggle theme</span></button></div></div></div></div></div></div></div></div></header><main class="flex-auto"><div class="sm:px-8 post mt-16 lg:mt-32"><div class="mx-auto w-full max-w-7xl lg:px-8"><div class="relative px-4 sm:px-8 lg:px-12"><div class="mx-auto max-w-2xl lg:max-w-5xl"><div class="xl:relative"><div class="mx-auto max-w-2xl"><article><header class="flex flex-col"><h1 class="text-4xl font-bold font-bold tracking-tight sm:text-5xl">Robust Serverless API Boilerplate with ES6, Folder Structure, Testing (Mocha + Chai), and ESLint</h1><div class="flex gap-3 pt-1"><time dateTime="2018-08-25" class="text-muted-foreground order-first flex items-center pr-2 text-base"><span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span><span class="ml-3">August 25, 2018</span></time><span class="text-muted-foreground">-</span><span class="text-muted-foreground/80">serverless</span><span class="text-muted-foreground/80">eslint</span><span class="text-muted-foreground/80">javascript</span><span class="text-muted-foreground/80">es6</span></div><div class="text-accent-foreground pt-3 text-sm italic">~<!-- -->7 min read</div></header><div class="mt-8 prose dark:prose-invert" data-mdx-content="true"><div><p>Basically before I start any serious project I like to have a few things setup:</p>
+<ul>
+<li>ES6/ES7 Webpack and Babel (From Starter)</li>
+<li>A good offline dev workflow (From Starter)</li>
+<li>ESLint</li>
+<li>Folder structure</li>
+<li>Testing</li>
+</ul>
+<p>I hope this isnt too obscure of a topic, but I'm not actually going to cover how to build a CRUD API, this is just an example starting boilerplate before you begin coding your project.</p>
+<p>I'm assuming you've at least tried using the serverless framework before. If you are new to serverless, I have an article that breaks it down from the beginning here:</p>
+<p><a href="/posts/serverless-back-end-for-react-your-introduction-to-serverless-architecture" title="/posts/serverless-back-end-for-react-your-introduction-to-serverless-architecture">Serverless Back-End for React - Your Introduction to Serverless Architecture</a></p>
+<h3 id="the-starter"><a aria-hidden="true" tabindex="-1" href="#the-starter"><a href="#the-starter" style="margin-right: 10px">#</a></a>The Starter</h3>
+<p>Lets start with the great <a href="https://serverless-stack.com/chapters/serverless-nodejs-starter.html" title="https://serverless-stack.com/chapters/serverless-nodejs-starter.html">Serverless Node.js Starter</a> (<a href="https://github.com/AnomalyInnovations/serverless-nodejs-starter" title="https://github.com/AnomalyInnovations/serverless-nodejs-starter">github</a>) from the awesome <a href="https://serverless-stack.com/" title="https://serverless-stack.com/">Serverless Stack</a> project. If you're not familiar with that project be sure to check it out.</p>
+<p>The starter basically includes all this stuff (From the the <a href="https://serverless-stack.com/chapters/serverless-nodejs-starter.html" title="https://serverless-stack.com/chapters/serverless-nodejs-starter.html">starter description page</a>):</p>
+<ul>
+<li><strong>Use ES7 syntax in your handler functions</strong></li>
+<li><strong>Package your functions using Webpack</strong></li>
+<li><strong>Run API Gateway locally</strong>
+<ul>
+<li>Use <code>serverless offline start</code></li>
+</ul>
+</li>
+<li><strong>Support for unit tests</strong>
+<ul>
+<li>Run <code>npm test</code> to run your tests</li>
+</ul>
+</li>
+<li><strong>Sourcemaps for proper error messages</strong>
+<ul>
+<li>Error message show the correct line numbers</li>
+<li>Works in production with CloudWatch</li>
+</ul>
+</li>
+<li><strong>Automatic support for multiple handler files</strong>
+<ul>
+<li>No need to add a new entry to your <code>webpack.config.js</code></li>
+</ul>
+</li>
+<li><strong>Add environment variables for your stages</strong></li>
+</ul>
+<p>If you dont use this starter, you have to add a lot of this stuff one by one by including and configuring the right packages and plugins. So this gives us a great place to start.</p>
+<h3 id="create-a-new-project"><a aria-hidden="true" tabindex="-1" href="#create-a-new-project"><a href="#create-a-new-project" style="margin-right: 10px">#</a></a>Create a New Project</h3>
+<p>First make sure you have the <code>serverless</code> module installed globally</p>
+<pre><code>yarn global add serverless
+# or
+npm install serverless -g
+</code></pre>
+<p>And then run this command to create a new serverless project using the starter:</p>
+<pre><code>$ serverless install --url https://github.com/AnomalyInnovations/serverless-nodejs-starter --name my-project
+</code></pre>
+<p>It gives us a <code>serverless.yml</code> file that looks like this:</p>
+<pre><code>service: my-project
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+</code></pre>
+<p>And a handler.js file that looks like this:</p>
+<pre><code>export const hello = async (event, context, callback) => {
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: `Go Serverless v1.0! ${(await message({ time: 1, copy: 'Your function executed successfully!'}))}`,
+    }),
+  };
+
+  callback(null, response);
+};
+
+const message = ({ time, ...rest }) => new Promise((resolve, reject) => 
+  setTimeout(() => {
+    resolve(`${rest.copy} (with a delay)`);
+  }, time * 1000)
+);
+</code></pre>
+<p>It also gives us a test folder with an example test.</p>
+<pre><code># tests/handler.test.js
+
+import * as handler from '../handler';
+
+test('hello', async () => {
+  const event = 'event';
+  const context = 'context';
+  const callback = (error, response) => {
+    expect(response.statusCode).toEqual(200);
+    expect(typeof response.body).toBe("string");
+  };
+
+  await handler.hello(event, context, callback);
+});
+</code></pre>
+<p>We can run this command to start the offline server for a good development workflow:</p>
+<pre><code>serverless offline start
+</code></pre>
+<p>This will start an offline server that you can use to make API requests and test all the endpoints.</p>
+<p>I also like to add a script in the <code>package.json</code> file to make this easy to launch:</p>
+<pre><code>  "scripts": {
+  	"start": "serverless offline start",
+    "lint": "node_modules/.bin/eslint .",
+    "test": "NODE_ENV=test node_modules/.bin/mocha --recursive --require babel-core/register"
+  },
+</code></pre>
+<h3 id="add-eslint"><a aria-hidden="true" tabindex="-1" href="#add-eslint"><a href="#add-eslint" style="margin-right: 10px">#</a></a>Add ESLint</h3>
+<p>I always work with a linter these days, there's no better way to keep clean code and enforce best practices with a language like javascript where its so easy to write messy and ugly code.</p>
+<p>Lets add <code>eslint</code> and some plugins:</p>
+<pre><code>, yarn add --dev eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-mocha eslint-plugin-promise
+</code></pre>
+<p>And then make a new <code>.eslintrc.json</code> file in the root of our project.</p>
+<pre><code>touch .eslintrc.json
+</code></pre>
+<p>And add this to the new file:</p>
+<pre><code>{
+  "extends": ["airbnb/base", "plugin:promise/recommended"],
+  "plugins": ["promise"],
+  "rules": {}
+}
+</code></pre>
+<p>Add a <code>.eslintignore</code> file:.</p>
+<pre><code>touch .eslintignore
+</code></pre>
+<p>And ignore the webpack config:</p>
+<pre><code># .eslintignore
+
+webpack.config.js
+</code></pre>
+<p>And then add a <code>lint</code> script to our <code>package.json</code>:</p>
+<pre><code>  "scripts": {
+  	"start": "serverless offline start",
+    "lint": "node_modules/.bin/eslint .",
+  },
+</code></pre>
+<p>Then you can run the linter with this command:</p>
+<pre><code>yarn lint
+# or 
+npm run lint
+</code></pre>
+<h3 id="api-folder-structure"><a aria-hidden="true" tabindex="-1" href="#api-folder-structure"><a href="#api-folder-structure" style="margin-right: 10px">#</a></a>API Folder Structure</h3>
+<p>When I'm building a serverless api I like to give my functions, paths, and folder a api-like structure. So I'll create some directories to organize my handlers. This may be a bit overkill for small projects, but I dont think there are any downsides of having this kind of extra organization right off the bat.</p>
+<pre><code>mkdir -p handlers/api/v1/todos
+</code></pre>
+<p>I think you can think of these handlers as controllers, and so if you're building CRUD endpoints for a model, you can add a different file for each of the 5 main API actions:</p>
+<pre><code>touch handlers/api/v1/todos/index.js
+touch handlers/api/v1/todos/show.js
+touch handlers/api/v1/todos/create.js
+touch handlers/api/v1/todos/update.js
+touch handlers/api/v1/todos/delete.js
+</code></pre>
+<p>Then the functions part of your <code>serverless.yml</code> file would look something like this:</p>
+<pre><code>functions:
+  api/v1/todos/index:
+    handler: handlers/api/v1/todos/index.default
+    events:
+      - http:
+          path: api/v1/todos
+          method: get
+  api/v1/todos/show:
+    handler: handlers/api/v1/todos/show.default
+    events:
+      - http:
+          path: api/v1/todos/{id}
+          method: get
+  api/v1/todos/create:
+    handler: handlers/api/v1/todos/create.default
+    events:
+      - http:
+          path: api/v1/todos
+          method: post
+  api/v1/todos/update:
+    handler: handlers/api/v1/todos/update.default
+    events:
+      - http:
+          path: api/v1/todos/{id}
+          method: put
+  api/v1/todos/delete:
+    handler: handlers/api/v1/todos/delete.default
+    events:
+      - http:
+          path: api/v1/todos/{id}
+          method: delete
+</code></pre>
+<p>As you can see this is a pretty typical REST setup.</p>
+<p>We can now remove our original handler.js file since we dont need it anymore:</p>
+<pre><code>rm handler.js
+</code></pre>
+<p>We wont be using this today, but lets also create a <code>models</code> folder where I can put our models:</p>
+<pre><code>mkdir models
+touch models/todo.js
+</code></pre>
+<p>Then the individual handlers will include the models to handle the crud operations.</p>
+<p>Now I'm going to add a basic handler for <code>todos/index.js</code> so we have something to test:</p>
+<pre><code># handlers/api/v1/index.js
+
+export default (event, context, callback) => {
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: 'Hello from todos/index',
+    }),
+  };
+
+  callback(null, response);
+};
+</code></pre>
+<p>And if you are following along, you'll have to add an export to all the handler files in order to run the offline server.</p>
+<h3 id="setup-testing"><a aria-hidden="true" tabindex="-1" href="#setup-testing"><a href="#setup-testing" style="margin-right: 10px">#</a></a>Setup Testing</h3>
+<p>By default the starter comes with <code>jest</code> but I prefer <code>mocha</code> so lets swap <code>jest</code> for <code>mocha</code> and add a bit of <code>chai</code> for the assertions.</p>
+<pre><code>mv tests test
+rm test/handler.test.js
+yarn remove --dev jest
+yarn add --dev mocha chai
+touch test/test_helper.js
+</code></pre>
+<p>Now lets add some test files for our endpoints:</p>
+<pre><code>mkdir -p test/api/v1/todos/
+touch test/api/v1/todos/index.test.js
+touch test/api/v1/todos/show.test.js
+touch test/api/v1/todos/create.test.js
+touch test/api/v1/todos/update.test.js
+touch test/api/v1/todos/delete.test.js
+</code></pre>
+<p>And we'll only add 1 test for now for our <code>todos/index</code> handler:</p>
+<pre><code>import { expect } from 'chai';
+
+import todosIndex from '../../../../handlers/api/v1/todos';
+
+describe('Fetching list of todos', () => {
+  it('returns a valid response', (done) => {
+    const event = 'event';
+    const context = 'context';
+    const callback = (error, response) => {
+      expect(response.statusCode).to.equal(200);
+      expect(typeof response.body).to.equal('string');
+      expect(response.body).to.contain('Hello from todos/index');
+      done();
+    };
+
+    todosIndex(event, context, callback);
+  });
+});
+</code></pre>
+<p>Then we can run it by first adding this script to our <code>package.json</code> file:</p>
+<pre><code>  "scripts": {
+  	"start": "serverless offline start",
+    "lint": "node_modules/.bin/eslint .",
+    "test": "NODE_ENV=test node_modules/.bin/mocha --recursive --require babel-core/register"
+  },
+</code></pre>
+<p>We have to add the <code>--recursive</code> tag so it will find the tests in our subfolders, and the <code>--require babel-core/register</code> tag to make ES7 work with our tests.</p>
+<p>Then we can run our tests with the command:</p>
+<pre><code>yarn test
+# or
+npm test
+</code></pre>
+<p>Now we also need a different <code>.eslintrc.json</code> file for our testing so if we put a new one in our test tile the tests will play by different eslint rules.</p>
+<pre><code>touch test/.eslintrc.json
+</code></pre>
+<p>With these contents so it will ignore mocha keywords:</p>
+<pre><code>{
+  "extends": ["airbnb/base", "plugin:promise/recommended"],
+  "plugins": ["promise", "mocha"],
+  "env": {
+    "mocha": true
+  },
+  "rules": {}
+}
+</code></pre>
+<h3 id="wrap-it-up"><a aria-hidden="true" tabindex="-1" href="#wrap-it-up"><a href="#wrap-it-up" style="margin-right: 10px">#</a></a>Wrap it up</h3>
+<p>Now we can start our offline server:</p>
+<pre><code>serverless offline start
+</code></pre>
+<p>We can test our code:</p>
+<pre><code>yarn test
+# or
+npm test
+</code></pre>
+<p>...and we can lint our code:</p>
+<pre><code>yarn lint
+# or
+npm run lint
+</code></pre>
+<p>And we have some good folder structure to start building our API.</p>
+<p>Thanks for reading, I hope this can be of help to someone.</p>
+<p>As always if you notice anything I did that could be improved, please reach out. I'm always looking to improve.</p></div></div></article></div></div></div></div></div></div></main><footer class="mt-32 flex-none"><div class="sm:px-8"><div class="mx-auto w-full max-w-7xl lg:px-8"><div class="pb-16 pt-10"><div class="relative px-4 sm:px-8 lg:px-12"><div class="mx-auto max-w-2xl lg:max-w-5xl"><div class="flex flex-col items-center justify-between gap-6 sm:flex-row"><div class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200"><a class="transition hover:text-teal-500 dark:hover:text-teal-400" href="/about">About</a><a class="transition hover:text-teal-500 dark:hover:text-teal-400" href="/projects">Projects</a><a class="transition hover:text-teal-500 dark:hover:text-teal-400" href="/speaking">Speaking</a><a class="transition hover:text-teal-500 dark:hover:text-teal-400" href="/uses">Uses</a></div><p class="text-sm text-zinc-400 dark:text-zinc-500">© <!-- -->2023<!-- --> Spencer Sharp. All rights reserved.</p></div></div></div></div></div></div></footer></div></div><script src="/_next/static/chunks/webpack-113544170b8b14d7.js" crossorigin="" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/_next/static/css/9d8f288a99c54fb3.css\",\"style\",{\"crossOrigin\":\"\"}]\n0:\"$L2\"\n"])</script><script>self.__next_f.push([1,"3:I[7483,[],\"\"]\n5:I[655,[],\"\"]\n6:I[2286,[\"736\",\"static/chunks/736-93d26bf9f492bada.js\",\"545\",\"static/chunks/545-972397648c423446.js\",\"871\",\"static/chunks/871-e93f475163439fcd.js\",\"185\",\"static/chunks/app/layout-58152a9375fe786b.js\"],\"ThemeProvider\"]\n7:I[7019,[\"736\",\"static/chunks/736-93d26bf9f492bada.js\",\"545\",\"static/chunks/545-972397648c423446.js\",\"871\",\"static/chunks/871-e93f475163439fcd.js\",\"185\",\"static/chunks/app/layout-58152a9375fe786b.js\"],\"Header\"]\n8:I[3849,[],\"\"]\n9:I[8656,[],\"\"]\na:I[4736,[\"736\",\"s"])</script><script>self.__next_f.push([1,"tatic/chunks/736-93d26bf9f492bada.js\",\"991\",\"static/chunks/app/posts/page-6d06c0c42f2ef9eb.js\"],\"\"]\n"])</script><script>self.__next_f.push([1,"2:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/9d8f288a99c54fb3.css\",\"precedence\":\"next\",\"crossOrigin\":\"\"}]],[\"$\",\"$L3\",null,{\"buildId\":\"AzO8YmqLI-jVS4hv3vlbF\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/posts/2018-08-25-serverless-my-initial-setup-with-es6-testing-and-ci-deployment\",\"initialTree\":[\"\",{\"children\":[\"posts\",{\"children\":[[\"slug\",\"2018-08-25-serverless-my-initial-setup-with-es6-testing-and-ci-deployment\",\"d\"],{\"children\":[\"__PAGE__?{\\\"slug\\\":\\\"2018-08-25-serverless-my-initial-setup-with-es6-testing-and-ci-deployment\\\"}\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialHead\":[false,\"$L4\"],\"globalErrorComponent\":\"$5\",\"children\":[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"className\":\"h-full antialiased\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"className\":\"flex h-full\",\"children\":[\"$\",\"$L6\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[\"$\",\"div\",null,{\"className\":\"flex w-full\",\"children\":[\"$\",\"div\",null,{\"className\":\"relative flex w-full flex-col\",\"children\":[[\"$\",\"$L7\",null,{}],[\"$\",\"main\",null,{\"className\":\"flex-auto\",\"children\":[\"$\",\"$L8\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"loadingScripts\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[\"$\",\"div\",null,{\"className\":\"sm:px-8 flex h-full items-center pt-16 sm:pt-32\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto w-full max-w-7xl lg:px-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"relative px-4 sm:px-8 lg:px-12\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto max-w-2xl lg:max-w-5xl\",\"children\":[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-base font-semibold text-zinc-400 dark:text-zinc-500\",\"children\":\"404\"}],[\"$\",\"h1\",null,{\"className\":\"mt-4 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl\",\"children\":\"Page not found\"}],[\"$\",\"p\",null,{\"className\":\"mt-4 text-base text-zinc-600 dark:text-zinc-400\",\"children\":\"Sorry, we couldn’t find the page you’re looking for.\"}],[\"$\",\"$La\",null,{\"href\":\"/\",\"children\":[\"$\",\"button\",null,{\"className\":\"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-4\",\"children\":\"Go back home\"}]}]]}]}]}]}]}],\"notFoundStyles\":[],\"childProp\":{\"current\":[\"$\",\"$L8\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"posts\",\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"loadingScripts\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$\",\"$L8\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"posts\",\"children\",[\"slug\",\"2018-08-25-serverless-my-initial-setup-with-es6-testing-and-ci-deployment\",\"d\"],\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"loadingScripts\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$Lb\",\"$Lc\",null],\"segment\":\"__PAGE__?{\\\"slug\\\":\\\"2018-08-25-serverless-my-initial-setup-with-es6-testing-and-ci-deployment\\\"}\"},\"styles\":null}],\"segment\":[\"slug\",\"2018-08-25-serverless-my-initial-setup-with-es6-testing-and-ci-deployment\",\"d\"]},\"styles\":null}],\"segment\":\"posts\"},\"styles\":null}]}],[\"$\",\"footer\",null,{\"className\":\"mt-32 flex-none\",\"children\":[\"$\",\"div\",null,{\"className\":\"sm:px-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto w-full max-w-7xl lg:px-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"pb-16 pt-10\",\"children\":[\"$\",\"div\",null,{\"className\":\"relative px-4 sm:px-8 lg:px-12\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto max-w-2xl lg:max-w-5xl\",\"children\":[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center justify-between gap-6 sm:flex-row\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200\",\"children\":[[\"$\",\"$La\",null,{\"href\":\"/about\",\"className\":\"transition hover:text-teal-500 dark:hover:text-teal-400\",\"children\":\"About\"}],[\"$\",\"$La\",null,{\"href\":\"/projects\",\"className\":\"transition hover:text-teal-500 dark:hover:text-teal-400\",\"children\":\"Projects\"}],[\"$\",\"$La\",null,{\"href\":\"/speaking\",\"className\":\"transition hover:text-teal-500 dark:hover:text-teal-400\",\"children\":\"Speaking\"}],[\"$\",\"$La\",null,{\"href\":\"/uses\",\"className\":\"transition hover:text-teal-500 dark:hover:text-teal-400\",\"children\":\"Uses\"}]]}],[\"$\",\"p\",null,{\"className\":\"text-sm text-zinc-400 dark:text-zinc-500\",\"children\":[\"© \",2023,\" Spencer Sharp. All rights reserved.\"]}]]}]}]}]}]}]}]}]]}]}]}]}]}],null]}]]\n"])</script><script>self.__next_f.push([1,"d:T3189,"])</script><script>self.__next_f.push([1,"\u003cp\u003eBasically before I start any serious project I like to have a few things setup:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eES6/ES7 Webpack and Babel (From Starter)\u003c/li\u003e\n\u003cli\u003eA good offline dev workflow (From Starter)\u003c/li\u003e\n\u003cli\u003eESLint\u003c/li\u003e\n\u003cli\u003eFolder structure\u003c/li\u003e\n\u003cli\u003eTesting\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI hope this isnt too obscure of a topic, but I'm not actually going to cover how to build a CRUD API, this is just an example starting boilerplate before you begin coding your project.\u003c/p\u003e\n\u003cp\u003eI'm assuming you've at least tried using the serverless framework before. If you are new to serverless, I have an article that breaks it down from the beginning here:\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"/posts/serverless-back-end-for-react-your-introduction-to-serverless-architecture\" title=\"/posts/serverless-back-end-for-react-your-introduction-to-serverless-architecture\"\u003eServerless Back-End for React - Your Introduction to Serverless Architecture\u003c/a\u003e\u003c/p\u003e\n\u003ch3 id=\"the-starter\"\u003e\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#the-starter\"\u003e\u003ca href=\"#the-starter\" style=\"margin-right: 10px\"\u003e#\u003c/a\u003e\u003c/a\u003eThe Starter\u003c/h3\u003e\n\u003cp\u003eLets start with the great \u003ca href=\"https://serverless-stack.com/chapters/serverless-nodejs-starter.html\" title=\"https://serverless-stack.com/chapters/serverless-nodejs-starter.html\"\u003eServerless Node.js Starter\u003c/a\u003e (\u003ca href=\"https://github.com/AnomalyInnovations/serverless-nodejs-starter\" title=\"https://github.com/AnomalyInnovations/serverless-nodejs-starter\"\u003egithub\u003c/a\u003e) from the awesome \u003ca href=\"https://serverless-stack.com/\" title=\"https://serverless-stack.com/\"\u003eServerless Stack\u003c/a\u003e project. If you're not familiar with that project be sure to check it out.\u003c/p\u003e\n\u003cp\u003eThe starter basically includes all this stuff (From the the \u003ca href=\"https://serverless-stack.com/chapters/serverless-nodejs-starter.html\" title=\"https://serverless-stack.com/chapters/serverless-nodejs-starter.html\"\u003estarter description page\u003c/a\u003e):\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eUse ES7 syntax in your handler functions\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003ePackage your functions using Webpack\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eRun API Gateway locally\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003eUse \u003ccode\u003eserverless offline start\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eSupport for unit tests\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003eRun \u003ccode\u003enpm test\u003c/code\u003e to run your tests\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eSourcemaps for proper error messages\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003eError message show the correct line numbers\u003c/li\u003e\n\u003cli\u003eWorks in production with CloudWatch\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eAutomatic support for multiple handler files\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003eNo need to add a new entry to your \u003ccode\u003ewebpack.config.js\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eAdd environment variables for your stages\u003c/strong\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eIf you dont use this starter, you have to add a lot of this stuff one by one by including and configuring the right packages and plugins. So this gives us a great place to start.\u003c/p\u003e\n\u003ch3 id=\"create-a-new-project\"\u003e\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#create-a-new-project\"\u003e\u003ca href=\"#create-a-new-project\" style=\"margin-right: 10px\"\u003e#\u003c/a\u003e\u003c/a\u003eCreate a New Project\u003c/h3\u003e\n\u003cp\u003eFirst make sure you have the \u003ccode\u003eserverless\u003c/code\u003e module installed globally\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eyarn global add serverless\n# or\nnpm install serverless -g\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAnd then run this command to create a new serverless project using the starter:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e$ serverless install --url https://github.com/AnomalyInnovations/serverless-nodejs-starter --name my-project\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIt gives us a \u003ccode\u003eserverless.yml\u003c/code\u003e file that looks like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eservice: my-project\n\nplugins:\n  - serverless-webpack\n  - serverless-offline\n\ncustom:\n  webpack:\n    webpackConfig: ./webpack.config.js\n    includeModules: true\n\nprovider:\n  name: aws\n  runtime: nodejs8.10\n  stage: dev\n  region: us-east-1\n\nfunctions:\n  hello:\n    handler: handler.hello\n    events:\n      - http:\n          path: hello\n          method: get\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAnd a handler.js file that looks like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eexport const hello = async (event, context, callback) =\u003e {\n  const response = {\n    statusCode: 200,\n    body: JSON.stringify({\n      message: `Go Serverless v1.0! ${(await message({ time: 1, copy: 'Your function executed successfully!'}))}`,\n    }),\n  };\n\n  callback(null, response);\n};\n\nconst message = ({ time, ...rest }) =\u003e new Promise((resolve, reject) =\u003e \n  setTimeout(() =\u003e {\n    resolve(`${rest.copy} (with a delay)`);\n  }, time * 1000)\n);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIt also gives us a test folder with an example test.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e# tests/handler.test.js\n\nimport * as handler from '../handler';\n\ntest('hello', async () =\u003e {\n  const event = 'event';\n  const context = 'context';\n  const callback = (error, response) =\u003e {\n    expect(response.statusCode).toEqual(200);\n    expect(typeof response.body).toBe(\"string\");\n  };\n\n  await handler.hello(event, context, callback);\n});\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWe can run this command to start the offline server for a good development workflow:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eserverless offline start\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThis will start an offline server that you can use to make API requests and test all the endpoints.\u003c/p\u003e\n\u003cp\u003eI also like to add a script in the \u003ccode\u003epackage.json\u003c/code\u003e file to make this easy to launch:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e  \"scripts\": {\n  \t\"start\": \"serverless offline start\",\n    \"lint\": \"node_modules/.bin/eslint .\",\n    \"test\": \"NODE_ENV=test node_modules/.bin/mocha --recursive --require babel-core/register\"\n  },\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"add-eslint\"\u003e\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#add-eslint\"\u003e\u003ca href=\"#add-eslint\" style=\"margin-right: 10px\"\u003e#\u003c/a\u003e\u003c/a\u003eAdd ESLint\u003c/h3\u003e\n\u003cp\u003eI always work with a linter these days, there's no better way to keep clean code and enforce best practices with a language like javascript where its so easy to write messy and ugly code.\u003c/p\u003e\n\u003cp\u003eLets add \u003ccode\u003eeslint\u003c/code\u003e and some plugins:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e, yarn add --dev eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-mocha eslint-plugin-promise\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAnd then make a new \u003ccode\u003e.eslintrc.json\u003c/code\u003e file in the root of our project.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003etouch .eslintrc.json\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAnd add this to the new file:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e{\n  \"extends\": [\"airbnb/base\", \"plugin:promise/recommended\"],\n  \"plugins\": [\"promise\"],\n  \"rules\": {}\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAdd a \u003ccode\u003e.eslintignore\u003c/code\u003e file:.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003etouch .eslintignore\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAnd ignore the webpack config:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e# .eslintignore\n\nwebpack.config.js\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAnd then add a \u003ccode\u003elint\u003c/code\u003e script to our \u003ccode\u003epackage.json\u003c/code\u003e:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e  \"scripts\": {\n  \t\"start\": \"serverless offline start\",\n    \"lint\": \"node_modules/.bin/eslint .\",\n  },\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThen you can run the linter with this command:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eyarn lint\n# or \nnpm run lint\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"api-folder-structure\"\u003e\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#api-folder-structure\"\u003e\u003ca href=\"#api-folder-structure\" style=\"margin-right: 10px\"\u003e#\u003c/a\u003e\u003c/a\u003eAPI Folder Structure\u003c/h3\u003e\n\u003cp\u003eWhen I'm building a serverless api I like to give my functions, paths, and folder a api-like structure. So I'll create some directories to organize my handlers. This may be a bit overkill for small projects, but I dont think there are any downsides of having this kind of extra organization right off the bat.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003emkdir -p handlers/api/v1/todos\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eI think you can think of these handlers as controllers, and so if you're building CRUD endpoints for a model, you can add a different file for each of the 5 main API actions:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003etouch handlers/api/v1/todos/index.js\ntouch handlers/api/v1/todos/show.js\ntouch handlers/api/v1/todos/create.js\ntouch handlers/api/v1/todos/update.js\ntouch handlers/api/v1/todos/delete.js\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThen the functions part of your \u003ccode\u003eserverless.yml\u003c/code\u003e file would look something like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003efunctions:\n  api/v1/todos/index:\n    handler: handlers/api/v1/todos/index.default\n    events:\n      - http:\n          path: api/v1/todos\n          method: get\n  api/v1/todos/show:\n    handler: handlers/api/v1/todos/show.default\n    events:\n      - http:\n          path: api/v1/todos/{id}\n          method: get\n  api/v1/todos/create:\n    handler: handlers/api/v1/todos/create.default\n    events:\n      - http:\n          path: api/v1/todos\n          method: post\n  api/v1/todos/update:\n    handler: handlers/api/v1/todos/update.default\n    events:\n      - http:\n          path: api/v1/todos/{id}\n          method: put\n  api/v1/todos/delete:\n    handler: handlers/api/v1/todos/delete.default\n    events:\n      - http:\n          path: api/v1/todos/{id}\n          method: delete\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAs you can see this is a pretty typical REST setup.\u003c/p\u003e\n\u003cp\u003eWe can now remove our original handler.js file since we dont need it anymore:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003erm handler.js\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWe wont be using this today, but lets also create a \u003ccode\u003emodels\u003c/code\u003e folder where I can put our models:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003emkdir models\ntouch models/todo.js\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThen the individual handlers will include the models to handle the crud operations.\u003c/p\u003e\n\u003cp\u003eNow I'm going to add a basic handler for \u003ccode\u003etodos/index.js\u003c/code\u003e so we have something to test:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e# handlers/api/v1/index.js\n\nexport default (event, context, callback) =\u003e {\n  const response = {\n    statusCode: 200,\n    body: JSON.stringify({\n      message: 'Hello from todos/index',\n    }),\n  };\n\n  callback(null, response);\n};\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAnd if you are following along, you'll have to add an export to all the handler files in order to run the offline server.\u003c/p\u003e\n\u003ch3 id=\"setup-testing\"\u003e\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#setup-testing\"\u003e\u003ca href=\"#setup-testing\" style=\"margin-right: 10px\"\u003e#\u003c/a\u003e\u003c/a\u003eSetup Testing\u003c/h3\u003e\n\u003cp\u003eBy default the starter comes with \u003ccode\u003ejest\u003c/code\u003e but I prefer \u003ccode\u003emocha\u003c/code\u003e so lets swap \u003ccode\u003ejest\u003c/code\u003e for \u003ccode\u003emocha\u003c/code\u003e and add a bit of \u003ccode\u003echai\u003c/code\u003e for the assertions.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003emv tests test\nrm test/handler.test.js\nyarn remove --dev jest\nyarn add --dev mocha chai\ntouch test/test_helper.js\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eNow lets add some test files for our endpoints:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003emkdir -p test/api/v1/todos/\ntouch test/api/v1/todos/index.test.js\ntouch test/api/v1/todos/show.test.js\ntouch test/api/v1/todos/create.test.js\ntouch test/api/v1/todos/update.test.js\ntouch test/api/v1/todos/delete.test.js\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAnd we'll only add 1 test for now for our \u003ccode\u003etodos/index\u003c/code\u003e handler:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eimport { expect } from 'chai';\n\nimport todosIndex from '../../../../handlers/api/v1/todos';\n\ndescribe('Fetching list of todos', () =\u003e {\n  it('returns a valid response', (done) =\u003e {\n    const event = 'event';\n    const context = 'context';\n    const callback = (error, response) =\u003e {\n      expect(response.statusCode).to.equal(200);\n      expect(typeof response.body).to.equal('string');\n      expect(response.body).to.contain('Hello from todos/index');\n      done();\n    };\n\n    todosIndex(event, context, callback);\n  });\n});\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThen we can run it by first adding this script to our \u003ccode\u003epackage.json\u003c/code\u003e file:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e  \"scripts\": {\n  \t\"start\": \"serverless offline start\",\n    \"lint\": \"node_modules/.bin/eslint .\",\n    \"test\": \"NODE_ENV=test node_modules/.bin/mocha --recursive --require babel-core/register\"\n  },\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWe have to add the \u003ccode\u003e--recursive\u003c/code\u003e tag so it will find the tests in our subfolders, and the \u003ccode\u003e--require babel-core/register\u003c/code\u003e tag to make ES7 work with our tests.\u003c/p\u003e\n\u003cp\u003eThen we can run our tests with the command:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eyarn test\n# or\nnpm test\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eNow we also need a different \u003ccode\u003e.eslintrc.json\u003c/code\u003e file for our testing so if we put a new one in our test tile the tests will play by different eslint rules.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003etouch test/.eslintrc.json\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWith these contents so it will ignore mocha keywords:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e{\n  \"extends\": [\"airbnb/base\", \"plugin:promise/recommended\"],\n  \"plugins\": [\"promise\", \"mocha\"],\n  \"env\": {\n    \"mocha\": true\n  },\n  \"rules\": {}\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"wrap-it-up\"\u003e\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#wrap-it-up\"\u003e\u003ca href=\"#wrap-it-up\" style=\"margin-right: 10px\"\u003e#\u003c/a\u003e\u003c/a\u003eWrap it up\u003c/h3\u003e\n\u003cp\u003eNow we can start our offline server:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eserverless offline start\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWe can test our code:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eyarn test\n# or\nnpm test\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e...and we can lint our code:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eyarn lint\n# or\nnpm run lint\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAnd we have some good folder structure to start building our API.\u003c/p\u003e\n\u003cp\u003eThanks for reading, I hope this can be of help to someone.\u003c/p\u003e\n\u003cp\u003eAs always if you notice anything I did that could be improved, please reach out. I'm always looking to improve.\u003c/p\u003e"])</script><script>self.__next_f.push([1,"c:[\"$\",\"div\",null,{\"className\":\"sm:px-8 post mt-16 lg:mt-32\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto w-full max-w-7xl lg:px-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"relative px-4 sm:px-8 lg:px-12\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto max-w-2xl lg:max-w-5xl\",\"children\":[\"$\",\"div\",null,{\"className\":\"xl:relative\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto max-w-2xl\",\"children\":[\"$\",\"article\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"flex flex-col\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-4xl font-bold font-bold tracking-tight sm:text-5xl\",\"children\":\"Robust Serverless API Boilerplate with ES6, Folder Structure, Testing (Mocha + Chai), and ESLint\"}],[\"$\",\"div\",null,{\"className\":\"flex gap-3 pt-1\",\"children\":[[\"$\",\"time\",null,{\"dateTime\":\"2018-08-25\",\"className\":\"text-muted-foreground order-first flex items-center pr-2 text-base\",\"children\":[[\"$\",\"span\",null,{\"className\":\"h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500\"}],[\"$\",\"span\",null,{\"className\":\"ml-3\",\"children\":\"August 25, 2018\"}]]}],[\"$\",\"span\",null,{\"className\":\"text-muted-foreground\",\"children\":\"-\"}],[[\"$\",\"span\",\"serverless\",{\"className\":\"text-muted-foreground/80\",\"children\":\"serverless\"}],[\"$\",\"span\",\"eslint\",{\"className\":\"text-muted-foreground/80\",\"children\":\"eslint\"}],[\"$\",\"span\",\"javascript\",{\"className\":\"text-muted-foreground/80\",\"children\":\"javascript\"}],[\"$\",\"span\",\"es6\",{\"className\":\"text-muted-foreground/80\",\"children\":\"es6\"}]]]}],[\"$\",\"div\",null,{\"className\":\"text-accent-foreground pt-3 text-sm italic\",\"children\":[\"~\",\"7 min read\"]}]]}],[\"$\",\"div\",null,{\"className\":\"mt-8 prose dark:prose-invert\",\"data-mdx-content\":true,\"children\":[\"$\",\"div\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"$d\"}}]}]]}]}]}]}]}]}]}]\n"])</script><script>self.__next_f.push([1,"4:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Robust Serverless API Boilerplate with ES6, Folder Structure, Testing (Mocha + Chai), and ESLint - Spencer Sharp\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.\"}],[\"$\",\"link\",\"4\",{\"rel\":\"alternate\",\"type\":\"application/rss+xml\",\"href\":\"undefined/feed.xml\"}]]\n"])</script><script>self.__next_f.push([1,"b:null\n"])</script><script>self.__next_f.push([1,""])</script></body></html>

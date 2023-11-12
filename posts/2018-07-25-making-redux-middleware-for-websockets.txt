@@ -1,0 +1,120 @@
+1:HL["/_next/static/css/9d8f288a99c54fb3.css","style",{"crossOrigin":""}]
+0:["AzO8YmqLI-jVS4hv3vlbF",[[["",{"children":["posts",{"children":[["slug","2018-07-25-making-redux-middleware-for-websockets","d"],{"children":["__PAGE__?{\"slug\":\"2018-07-25-making-redux-middleware-for-websockets\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/9d8f288a99c54fb3.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:I[2286,["736","static/chunks/736-93d26bf9f492bada.js","545","static/chunks/545-972397648c423446.js","871","static/chunks/871-e93f475163439fcd.js","185","static/chunks/app/layout-58152a9375fe786b.js"],"ThemeProvider"]
+5:I[7019,["736","static/chunks/736-93d26bf9f492bada.js","545","static/chunks/545-972397648c423446.js","871","static/chunks/871-e93f475163439fcd.js","185","static/chunks/app/layout-58152a9375fe786b.js"],"Header"]
+6:I[3849,[],""]
+7:I[8656,[],""]
+8:I[4736,["736","static/chunks/736-93d26bf9f492bada.js","991","static/chunks/app/posts/page-6d06c0c42f2ef9eb.js"],""]
+2:[null,["$","html",null,{"lang":"en","className":"h-full antialiased","suppressHydrationWarning":true,"children":["$","body",null,{"className":"flex h-full","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":["$","div",null,{"className":"flex w-full","children":["$","div",null,{"className":"relative flex w-full flex-col","children":[["$","$L5",null,{}],["$","main",null,{"className":"flex-auto","children":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"className":"sm:px-8 flex h-full items-center pt-16 sm:pt-32","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"flex flex-col items-center","children":[["$","p",null,{"className":"text-base font-semibold text-zinc-400 dark:text-zinc-500","children":"404"}],["$","h1",null,{"className":"mt-4 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl","children":"Page not found"}],["$","p",null,{"className":"mt-4 text-base text-zinc-600 dark:text-zinc-400","children":"Sorry, we couldn’t find the page you’re looking for."}],["$","$L8",null,{"href":"/","children":["$","button",null,{"className":"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-4","children":"Go back home"}]}]]}]}]}]}]}],"notFoundStyles":[],"childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children",["slug","2018-07-25-making-redux-middleware-for-websockets","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L9","$La",null],"segment":"__PAGE__?{\"slug\":\"2018-07-25-making-redux-middleware-for-websockets\"}"},"styles":null}],"segment":["slug","2018-07-25-making-redux-middleware-for-websockets","d"]},"styles":null}],"segment":"posts"},"styles":null}]}],["$","footer",null,{"className":"mt-32 flex-none","children":["$","div",null,{"className":"sm:px-8","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"pb-16 pt-10","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"flex flex-col items-center justify-between gap-6 sm:flex-row","children":[["$","div",null,{"className":"flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200","children":[["$","$L8",null,{"href":"/about","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"About"}],["$","$L8",null,{"href":"/projects","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Projects"}],["$","$L8",null,{"href":"/speaking","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Speaking"}],["$","$L8",null,{"href":"/uses","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Uses"}]]}],["$","p",null,{"className":"text-sm text-zinc-400 dark:text-zinc-500","children":["© ",2023," Spencer Sharp. All rights reserved."]}]]}]}]}]}]}]}]}]]}]}]}]}]}],null]
+b:T222c,<p>This article uses ActionCable as the websocket library. If you want to see a version of this article using socket.io, <a href="/posts/using-socket-io-with-redux-websocket-redux-middleware" title="/posts/using-socket-io-with-redux-websocket-redux-middleware">click here.</a></p>
+<hr>
+<p>Middleware is one of the most powerful and useful features of redux. If you're unfamiliar with redux middleware, it is a way to insert extra behavior into dispatched redux actions.</p>
+<p>Today we're going to use it to make a clean and powerful way to manage our subscriptions to different Action Cable channels+rooms. This also means taking the data sent to use through action cable and dispatching the appropriate redux actions to mutate the state.</p>
+<p>{: .lead}<br>
+&#x3C;!–-break-–></p>
+<p>If you are unfamiliar with redux middleware, check out the <a href="https://redux.js.org/advanced/middleware" title="https://redux.js.org/advanced/middleware">documentation here</a>. The code below is inspired by reading through the source of <a href="https://github.com/erikras/react-redux-universal-hot-example" title="https://github.com/erikras/react-redux-universal-hot-example">this example redux app</a>, specifically <a href="https://github.com/erikras/react-redux-universal-hot-example/blob/master/src/redux/middleware/clientMiddleware.js" title="https://github.com/erikras/react-redux-universal-hot-example/blob/master/src/redux/middleware/clientMiddleware.js">this middleware</a>, so you may also want to check that out as well.</p>
+<h3 id="typical-redux-actions"><a aria-hidden="true" tabindex="-1" href="#typical-redux-actions"><a href="#typical-redux-actions" style="margin-right: 10px">#</a></a>Typical Redux Actions</h3>
+<p>Basically redux action, by default, looks like this:</p>
+<pre><code>{ type: 'MY_ACTION_TYPE' ...some_data }
+</code></pre>
+<p>Redux actions have 1 required attribute, <code>type</code>. Anything else is just extra and is usually meant to be used by the reducer to mutate the state.</p>
+<p>By using redux middleware we can define our own action patterns and structures. The middleware will check if the action has other specific attributes and handle that action differently than the others. That way all we have to do to trigger some custom redux behavior is dispatch an action with our specific attributes and it will automatically be handled differently.</p>
+<p>Specifically we are going to create a new kind of action that will subscribe or unsubscribe to specific Action Cable channels+rooms.</p>
+<h3 id="middleware-function"><a aria-hidden="true" tabindex="-1" href="#middleware-function"><a href="#middleware-function" style="margin-right: 10px">#</a></a>Middleware Function</h3>
+<p>First lets make a middleware function, you'll want to export this function from a file. I called my file `cableMiddleware.js`:</p>
+<pre><code>import ActionCable from 'actioncable';
+
+export default function cableMiddleware() {
+  const cable = ActionCable.createConsumer('/cable');
+
+  return ({ dispatch, getState }) => next => (action) => {
+    if (typeof(action) === 'function') {
+      return next(action)
+    }
+
+    const {
+      channel,
+      room,
+      leave,
+    } = action;
+    let { received } = action;
+
+    if (!channel) {
+      return next(action);
+    }
+
+    if (leave) {
+      const subscription = _.find(
+        cable.subscriptions.subscriptions,
+        sub => sub.identifier === JSON.stringify({ channel, room }),
+      );
+
+      return cable.subscriptions.remove(subscription);
+    }
+
+    if (typeof(received) === 'string') {
+      received = result => dispatch({ type: received, result })
+    }
+
+    return cable.subscriptions.create({ channel, room }, { received });
+  };
+}
+</code></pre>
+<p>Lets break down this code:</p>
+<p>Basically we first skip our middleware if the action is a function or if there is no <code>channel</code> attribute in our action.</p>
+<p>Then if there is a <code>leave</code> attribute, then we remove the action cable subscription to the channel+room.</p>
+<p>Else we create a subscription to the channel+room.</p>
+<p>But you will notice that we are doing some quick logic to check if the <code>received</code> attribute is a string. And if it is, we are changing its value to a function that dispatches a new action with the received data. So basically our <code>received</code> attribute can take both an action type string or an actual function. This gives us an extra level of control over how we handle the data coming in from Action Cable.</p>
+<p>And any data that is sent from the ActionCable server is included in the <code>result</code> attribute of the action. So the reducer can have easy access to any data the server sent. Also any extra action attributes (<code>...rest</code>) are just passed directly through to the dispatched action.</p>
+<p>Also notice that the function that we are exporting is returning another function. This is an example of a <a href="https://en.wikipedia.org/wiki/Higher-order_function" title="https://en.wikipedia.org/wiki/Higher-order_function">Higher-order function</a> and is a very useful pattern in Javascript. We will execute the outside function when we apply the middleware to redux which will create the ActionCable connection only once and give the inner function access to that cable connection going forward.</p>
+<h3 id="add-middleware-to-redux"><a aria-hidden="true" tabindex="-1" href="#add-middleware-to-redux"><a href="#add-middleware-to-redux" style="margin-right: 10px">#</a></a>Add Middleware to Redux</h3>
+<p>Then we have to apply our new middlware. Check the <a href="https://redux.js.org/advanced/middleware#attempt-6-naively-applying-the-middleware" title="https://redux.js.org/advanced/middleware#attempt-6-naively-applying-the-middleware">redux documentation</a> for how to do this. But you will probably need to do something like this when setting up your store:</p>
+<pre><code>import { createStore, applyMiddleware } from 'redux';
+import cableMiddleware from './middleware/cableMiddleware';
+import rootReducer from './reducers/index';
+
+const store = createStore(
+  rootReducer,
+  applyMiddleware(cableMiddleware())
+);
+</code></pre>
+<p>Since other file is actually exporting a higher-order function, don't forget to execute the cableMiddleware function when applying it to redux. This will also create the Action Cable connection only once when the store loads so we don't have to worry about creating a new connection every time.</p>
+<h3 id="our-new-action-creators"><a aria-hidden="true" tabindex="-1" href="#our-new-action-creators"><a href="#our-new-action-creators" style="margin-right: 10px">#</a></a>Our New Action Creators</h3>
+<p>We now have access to a new type of action that has new required attributes. Basically if we dispatch an action with a <code>channel</code> attribute it will trigger our cable middleware.</p>
+<p>Here are some example action creators using our new middleware.</p>
+<pre><code>export function subscribeConversation(conversationId) {
+  return {
+    channel: 'conversations',
+    room: `conversation_${conversationId}`,
+    received: NEW_MESSAGE,
+  }
+}
+
+export function unsubscribeConversation(conversationId) {
+  return {
+    channel: 'conversations',
+    room: `conversation_${conversationId}`,
+    leave: true,
+  }
+}
+
+// Action creator with received function:
+export function subscribeConversation(conversationId) {
+  return dispatch => dispatch({
+    channel: 'conversations',
+    room: `conversation_${conversationId}`,
+    received: data => dispatch({
+      type: NEW_MESSAGE,
+      payload: data.conversation,
+    }),
+  });
+}
+</code></pre>
+<p>You'll notice these actions don't even have the required <code>type</code> attribute, this is because when they are dispatched we hijack the action and do out own thing, so these particular actions never makes it to the reducer.</p>
+<p>Instead we have a <code>channel</code>, <code>room</code>, and <code>received</code> attributes required to subscribe to a channel+room, and <code>channel</code>, <code>room</code>, and <code>leave</code>, attributes required to unsubscribe from a channel+room.</p>
+<p>The important part here is that <code>received</code> is either an action string to dispatch when new data comes in, or a function to run when new data comes in.</p>
+<h3 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><a href="#conclusion" style="margin-right: 10px">#</a></a>Conclusion</h3>
+<p>I'm now a huge fan of redux middleware, I love how it cleans up and simplifies doing complex repetative things in our action creators.</p>
+<p>Now we've set this up we can subscribe and unsubscribe to rooms and channels very easily, as well as handle the data from the server in very robust and dynamic ways.</p>a:["$","div",null,{"className":"sm:px-8 post mt-16 lg:mt-32","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"xl:relative","children":["$","div",null,{"className":"mx-auto max-w-2xl","children":["$","article",null,{"children":[["$","header",null,{"className":"flex flex-col","children":[["$","h1",null,{"className":"text-4xl font-bold font-bold tracking-tight sm:text-5xl","children":"Using Action Cable with Redux - Websocket Redux Middleware"}],["$","div",null,{"className":"flex gap-3 pt-1","children":[["$","time",null,{"dateTime":"2018-07-25","className":"text-muted-foreground order-first flex items-center pr-2 text-base","children":[["$","span",null,{"className":"h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"}],["$","span",null,{"className":"ml-3","children":"July 25, 2018"}]]}],["$","span",null,{"className":"text-muted-foreground","children":"-"}],[["$","span","redux",{"className":"text-muted-foreground/80","children":"redux"}],["$","span","javascript",{"className":"text-muted-foreground/80","children":"javascript"}],["$","span","websockets",{"className":"text-muted-foreground/80","children":"websockets"}],["$","span","react",{"className":"text-muted-foreground/80","children":"react"}],["$","span","rails",{"className":"text-muted-foreground/80","children":"rails"}],["$","span","actioncable",{"className":"text-muted-foreground/80","children":"actioncable"}]]]}],["$","div",null,{"className":"text-accent-foreground pt-3 text-sm italic","children":["~","5 min read"]}]]}],["$","div",null,{"className":"mt-8 prose dark:prose-invert","data-mdx-content":true,"children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}]}]]}]}]}]}]}]}]}]
+3:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Using Action Cable with Redux - Websocket Redux Middleware - Spencer Sharp"}],["$","meta","3",{"name":"description","content":"I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."}],["$","link","4",{"rel":"alternate","type":"application/rss+xml","href":"undefined/feed.xml"}]]
+9:null

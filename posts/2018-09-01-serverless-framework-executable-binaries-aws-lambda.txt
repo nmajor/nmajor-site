@@ -1,0 +1,93 @@
+1:HL["/_next/static/css/9d8f288a99c54fb3.css","style",{"crossOrigin":""}]
+0:["AzO8YmqLI-jVS4hv3vlbF",[[["",{"children":["posts",{"children":[["slug","2018-09-01-serverless-framework-executable-binaries-aws-lambda","d"],{"children":["__PAGE__?{\"slug\":\"2018-09-01-serverless-framework-executable-binaries-aws-lambda\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/9d8f288a99c54fb3.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:I[2286,["736","static/chunks/736-93d26bf9f492bada.js","545","static/chunks/545-972397648c423446.js","871","static/chunks/871-e93f475163439fcd.js","185","static/chunks/app/layout-58152a9375fe786b.js"],"ThemeProvider"]
+5:I[7019,["736","static/chunks/736-93d26bf9f492bada.js","545","static/chunks/545-972397648c423446.js","871","static/chunks/871-e93f475163439fcd.js","185","static/chunks/app/layout-58152a9375fe786b.js"],"Header"]
+6:I[3849,[],""]
+7:I[8656,[],""]
+8:I[4736,["736","static/chunks/736-93d26bf9f492bada.js","991","static/chunks/app/posts/page-6d06c0c42f2ef9eb.js"],""]
+2:[null,["$","html",null,{"lang":"en","className":"h-full antialiased","suppressHydrationWarning":true,"children":["$","body",null,{"className":"flex h-full","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":["$","div",null,{"className":"flex w-full","children":["$","div",null,{"className":"relative flex w-full flex-col","children":[["$","$L5",null,{}],["$","main",null,{"className":"flex-auto","children":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"className":"sm:px-8 flex h-full items-center pt-16 sm:pt-32","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"flex flex-col items-center","children":[["$","p",null,{"className":"text-base font-semibold text-zinc-400 dark:text-zinc-500","children":"404"}],["$","h1",null,{"className":"mt-4 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl","children":"Page not found"}],["$","p",null,{"className":"mt-4 text-base text-zinc-600 dark:text-zinc-400","children":"Sorry, we couldn’t find the page you’re looking for."}],["$","$L8",null,{"href":"/","children":["$","button",null,{"className":"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-4","children":"Go back home"}]}]]}]}]}]}]}],"notFoundStyles":[],"childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children",["slug","2018-09-01-serverless-framework-executable-binaries-aws-lambda","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L9","$La",null],"segment":"__PAGE__?{\"slug\":\"2018-09-01-serverless-framework-executable-binaries-aws-lambda\"}"},"styles":null}],"segment":["slug","2018-09-01-serverless-framework-executable-binaries-aws-lambda","d"]},"styles":null}],"segment":"posts"},"styles":null}]}],["$","footer",null,{"className":"mt-32 flex-none","children":["$","div",null,{"className":"sm:px-8","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"pb-16 pt-10","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"flex flex-col items-center justify-between gap-6 sm:flex-row","children":[["$","div",null,{"className":"flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200","children":[["$","$L8",null,{"href":"/about","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"About"}],["$","$L8",null,{"href":"/projects","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Projects"}],["$","$L8",null,{"href":"/speaking","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Speaking"}],["$","$L8",null,{"href":"/uses","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Uses"}]]}],["$","p",null,{"className":"text-sm text-zinc-400 dark:text-zinc-500","children":["© ",2023," Spencer Sharp. All rights reserved."]}]]}]}]}]}]}]}]}]]}]}]}]}]}],null]
+b:T1c31,<h3 id="the-approach"><a aria-hidden="true" tabindex="-1" href="#the-approach"><a href="#the-approach" style="margin-right: 10px">#</a></a>The Approach</h3>
+<p>Basically we need to:</p>
+<ul>
+<li>Upload the executable binaries with the aws lambda deployment package.</li>
+<li>Make sure our executable binaries maintain the correct executable permissions.</li>
+<li>Change the <code>$PATH</code> env variable to include the location of our executables.</li>
+</ul>
+<p>And then we should be good to go.</p>
+<h3 id="upload"><a aria-hidden="true" tabindex="-1" href="#upload"><a href="#upload" style="margin-right: 10px">#</a></a>Upload</h3>
+<h5 id="without-webpack"><a aria-hidden="true" tabindex="-1" href="#without-webpack"><a href="#without-webpack" style="margin-right: 10px">#</a></a>Without Webpack</h5>
+<p>If you're not using the <code>serverless-webpack</code> plugin, then this is actually pretty easy.</p>
+<p>I like to just create a folder in my project called <code>bin</code> and put them all in there. I did this in my <a href="http://nmajor.com/posts/serverless-back-end-for-react-your-introduction-to-serverless-architecture" title="http://nmajor.com/posts/serverless-back-end-for-react-your-introduction-to-serverless-architecture">Serverless Backend for React</a> post.</p>
+<p>After you put the executables in the <code>bin</code> folder, put this in your <code>serverless.yml</code> file:</p>
+<pre><code>package:
+  include:
+    - bin/*
+</code></pre>
+<p>Your files should maintain their permissions.</p>
+<h5 id="with-webpack"><a aria-hidden="true" tabindex="-1" href="#with-webpack"><a href="#with-webpack" style="margin-right: 10px">#</a></a>With Webpack:</h5>
+<p>Here is where it gets tricky. The package includes are not honored by the <code>serverless-webpack</code> plugin, so we have have webpack include the files in our bundle. We're going to use the official <a href="https://webpack.js.org/plugins/copy-webpack-plugin/" title="https://webpack.js.org/plugins/copy-webpack-plugin/">copy-webpack-plugin</a> to do this, but here's the kicker. The <a href="https://webpack.js.org/plugins/copy-webpack-plugin/" title="https://webpack.js.org/plugins/copy-webpack-plugin/">copy-webpack-plugin</a> does NOT preserve file permission, so we then have to write a custom plugin to set the file permissions of all the files in our <code>bin</code> folder to <code>755</code> so they can be executed by lambda.</p>
+<p>But first lets copy our files with <a href="https://webpack.js.org/plugins/copy-webpack-plugin/" title="https://webpack.js.org/plugins/copy-webpack-plugin/">copy-webpack-plugin</a>. Do do this you can checkout the <a href="">documentation here</a>, or you can add this to your webpack config:</p>
+<pre><code>  plugins: [
+    new CopyWebpackPlugin([{
+      from: 'bin/',
+      to: 'bin/'
+    }]),
+  ]
+</code></pre>
+<p>Pretty easy.</p>
+<h3 id="permissions"><a aria-hidden="true" tabindex="-1" href="#permissions"><a href="#permissions" style="margin-right: 10px">#</a></a>Permissions</h3>
+<p>I did find a plugin called <a href="https://www.npmjs.com/package/webpack-permissions-plugin" title="https://www.npmjs.com/package/webpack-permissions-plugin">webpack-permissions-plugin </a> that helped me solve the issue with the permissions, but I couldn't get the feature to change all the permissions in the directory to work. So I decided to make my own simplified version of that plugin to simply handle changing the permissions of the files in the bin folder.</p>
+<p>So here's the simple plugin I whipped up:</p>
+<pre><code>const fs = require('fs');
+
+function WebpackBinPermission(options) {
+  this.options = options || {};
+}
+
+WebpackBinPermission.prototype.apply = function (compiler) {
+  compiler.plugin('done', () => {
+    const permissions = this.options.permissions || '755';
+    const binPath = `${compiler.outputPath}/bin`;
+    fs.readdir(binPath, (err, items) => {
+      if (items &#x26;&#x26; items.length > 0) {
+        for (let i = 0; i &#x3C; items.length; i += 1) {
+          fs.chmodSync(`${binPath}/${items[i]}`, permissions);
+        }
+      }
+    });
+  });
+};
+
+module.exports = WebpackBinPermission;
+</code></pre>
+<p>As you can see, its pretty simple and all it does it changes the permissions of everything in the <code>/bin</code> folder to <code>755</code>. And for me it works like a charm.</p>
+<p>Put that plugin code in a new file called <code>webpack-bin-permissions.js</code>.Then at the top of your webpack config file, import it like this:</p>
+<pre><code>const WebpackBinPermission = require('webpack-bin-permissions')
+</code></pre>
+<p>To then to use it, you just have to pair it with the <a href="https://webpack.js.org/plugins/copy-webpack-plugin/" title="https://webpack.js.org/plugins/copy-webpack-plugin/">copy-webpack-plugin</a> in your webpack config like this:</p>
+<pre><code>  plugins: [
+    new CopyWebpackPlugin([{
+      from: 'bin/',
+      to: 'bin/'
+    }]),
+    new WebpackBinPermission(),
+  ]
+</code></pre>
+<p>And then when <a href="">serverless-webpack</a> builds it will automatically copy everything in the bin folder and set the executable permissions correctly.</p>
+<h3 id="executable-path"><a aria-hidden="true" tabindex="-1" href="#executable-path"><a href="#executable-path" style="margin-right: 10px">#</a></a>Executable Path</h3>
+<p>According to the <a href="https://docs.aws.amazon.com/lambda/latest/dg/current-supported-versions.html" title="https://docs.aws.amazon.com/lambda/latest/dg/current-supported-versions.html">aws lambda documentation</a>, lambda functions run in a linux environment. And libraries are used to having access to ready to run executables. That means that in a terminal you can just type in the name of the program without referencing the whole path. If you're not familiar with how this works take a look at <a href="http://www.linfo.org/path_env_var.html" title="http://www.linfo.org/path_env_var.html">this page by linfo.org</a>.</p>
+<p>To make an executable ready-to-run without referencing its path, we have to set the <code>$PATH</code> environmental variable and tell linux to look inside our own <code>bin</code> folder when searching for valid ready-to-run executables.</p>
+<p>Thats actually really easy. According to <a href="">this official aws post</a> we can do it by just putting this line at the top of our handler code:</p>
+<pre><code>process.env.PATH = `${process.env.PATH}:${process.env.LAMBDA_TASK_ROOT}/bin`;
+</code></pre>
+<p>But I like to also wrap it around some logic so it doesnt interfere with testing:</p>
+<pre><code>if (process.env.LAMBDA_TASK_ROOT) {
+  process.env.PATH = `${process.env.PATH}:${process.env.LAMBDA_TASK_ROOT}/bin`;
+}
+</code></pre>
+<h3 id="wrap-it-up"><a aria-hidden="true" tabindex="-1" href="#wrap-it-up"><a href="#wrap-it-up" style="margin-right: 10px">#</a></a>Wrap it up</h3>
+<p>That is the approach that worked for me. I'm currently doing a lot of stuff with executables, and so I needed a solution that allowed me to possibly put many many files in the bin folder that reference each other, and this approach seems to work well.</p>
+<p>As always, please comment below if you see any room for improvement in my code, approach, or writing.</p>
+<p>Thanks for reading!</p>a:["$","div",null,{"className":"sm:px-8 post mt-16 lg:mt-32","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"xl:relative","children":["$","div",null,{"className":"mx-auto max-w-2xl","children":["$","article",null,{"children":[["$","header",null,{"className":"flex flex-col","children":[["$","h1",null,{"className":"text-4xl font-bold font-bold tracking-tight sm:text-5xl","children":"Executable Binary Files with Serverless Framework and Webpack - AWS Lambda"}],["$","div",null,{"className":"flex gap-3 pt-1","children":[["$","time",null,{"dateTime":"2018-09-01","className":"text-muted-foreground order-first flex items-center pr-2 text-base","children":[["$","span",null,{"className":"h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"}],["$","span",null,{"className":"ml-3","children":"September 1, 2018"}]]}],["$","span",null,{"className":"text-muted-foreground","children":"-"}],[["$","span","serverless",{"className":"text-muted-foreground/80","children":"serverless"}],["$","span","javascript",{"className":"text-muted-foreground/80","children":"javascript"}],["$","span","aws",{"className":"text-muted-foreground/80","children":"aws"}],["$","span","webpack",{"className":"text-muted-foreground/80","children":"webpack"}]]]}],["$","div",null,{"className":"text-accent-foreground pt-3 text-sm italic","children":["~","4 min read"]}]]}],["$","div",null,{"className":"mt-8 prose dark:prose-invert","data-mdx-content":true,"children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}]}]]}]}]}]}]}]}]}]
+3:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Executable Binary Files with Serverless Framework and Webpack - AWS Lambda - Spencer Sharp"}],["$","meta","3",{"name":"description","content":"I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."}],["$","link","4",{"rel":"alternate","type":"application/rss+xml","href":"undefined/feed.xml"}]]
+9:null

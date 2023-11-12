@@ -1,0 +1,79 @@
+1:HL["/_next/static/css/9d8f288a99c54fb3.css","style",{"crossOrigin":""}]
+0:["AzO8YmqLI-jVS4hv3vlbF",[[["",{"children":["posts",{"children":[["slug","2018-02-16-express-js-with-es6-and-babel","d"],{"children":["__PAGE__?{\"slug\":\"2018-02-16-express-js-with-es6-and-babel\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/9d8f288a99c54fb3.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:I[2286,["736","static/chunks/736-93d26bf9f492bada.js","545","static/chunks/545-972397648c423446.js","871","static/chunks/871-e93f475163439fcd.js","185","static/chunks/app/layout-58152a9375fe786b.js"],"ThemeProvider"]
+5:I[7019,["736","static/chunks/736-93d26bf9f492bada.js","545","static/chunks/545-972397648c423446.js","871","static/chunks/871-e93f475163439fcd.js","185","static/chunks/app/layout-58152a9375fe786b.js"],"Header"]
+6:I[3849,[],""]
+7:I[8656,[],""]
+8:I[4736,["736","static/chunks/736-93d26bf9f492bada.js","991","static/chunks/app/posts/page-6d06c0c42f2ef9eb.js"],""]
+2:[null,["$","html",null,{"lang":"en","className":"h-full antialiased","suppressHydrationWarning":true,"children":["$","body",null,{"className":"flex h-full","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":["$","div",null,{"className":"flex w-full","children":["$","div",null,{"className":"relative flex w-full flex-col","children":[["$","$L5",null,{}],["$","main",null,{"className":"flex-auto","children":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"className":"sm:px-8 flex h-full items-center pt-16 sm:pt-32","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"flex flex-col items-center","children":[["$","p",null,{"className":"text-base font-semibold text-zinc-400 dark:text-zinc-500","children":"404"}],["$","h1",null,{"className":"mt-4 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl","children":"Page not found"}],["$","p",null,{"className":"mt-4 text-base text-zinc-600 dark:text-zinc-400","children":"Sorry, we couldn’t find the page you’re looking for."}],["$","$L8",null,{"href":"/","children":["$","button",null,{"className":"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-4","children":"Go back home"}]}]]}]}]}]}]}],"notFoundStyles":[],"childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children",["slug","2018-02-16-express-js-with-es6-and-babel","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L9","$La",null],"segment":"__PAGE__?{\"slug\":\"2018-02-16-express-js-with-es6-and-babel\"}"},"styles":null}],"segment":["slug","2018-02-16-express-js-with-es6-and-babel","d"]},"styles":null}],"segment":"posts"},"styles":null}]}],["$","footer",null,{"className":"mt-32 flex-none","children":["$","div",null,{"className":"sm:px-8","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"pb-16 pt-10","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"flex flex-col items-center justify-between gap-6 sm:flex-row","children":[["$","div",null,{"className":"flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200","children":[["$","$L8",null,{"href":"/about","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"About"}],["$","$L8",null,{"href":"/projects","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Projects"}],["$","$L8",null,{"href":"/speaking","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Speaking"}],["$","$L8",null,{"href":"/uses","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Uses"}]]}],["$","p",null,{"className":"text-sm text-zinc-400 dark:text-zinc-500","children":["© ",2023," Spencer Sharp. All rights reserved."]}]]}]}]}]}]}]}]}]]}]}]}]}]}],null]
+b:T14ac,<p>The <code>babel-cli</code> gives us a command line tool called <code>babel-node</code> that wraps around node and converts our ES6 code to basic javascript that node can read.</p>
+<p><strong>However it is not recommended to use babel-node in production</strong></p>
+<h3 id="new-express-app"><a aria-hidden="true" tabindex="-1" href="#new-express-app"><a href="#new-express-app" style="margin-right: 10px">#</a></a>New Express App</h3>
+<p>First lets use the <a href="http://expressjs.com/en/starter/generator.html">express-generator</a> to make a new Express.js app.</p>
+<pre><code>$ express --view pug --css sass new-app
+$ cd new-app
+$ npm install
+</code></pre>
+<p>This generates a new express app in a new folder called new-app. And as you can see, I've told express to use sass for css and pug for the html templating.</p>
+<h3 id="rearrange-files"><a aria-hidden="true" tabindex="-1" href="#rearrange-files"><a href="#rearrange-files" style="margin-right: 10px">#</a></a>Rearrange Files</h3>
+<p>We are going to need to rearrange things a bit. This is because of the production build. We want all the javascript files isolated in a subfolder of our app because later we are going to tell babel to compile all the files and things get really messy if all our code is in at the same level as our dot files, node_modules folder, etc...</p>
+<p>So lets make a new folder called <code>app</code> and move all our express stuff into it.</p>
+<pre><code>$ mkdir app
+$ mv bin public routes views app.js app/
+</code></pre>
+<h3 id="install-babel"><a aria-hidden="true" tabindex="-1" href="#install-babel"><a href="#install-babel" style="margin-right: 10px">#</a></a>Install Babel</h3>
+<p>First we need to add 2 babel packages to our apps dev-dependencies.</p>
+<pre><code>$ npm install babel-cli --save-dev
+$ npm install babel-preset-env --save-dev
+</code></pre>
+<p><a href="">babel-preset-env</a> by default behaves like <a href="">babel-preset-latest</a>. Basically it includes all the new features of ECMAScript that are standardized each year. But it also allows you to specify specific environments to build for such as specific browsers you want to support.</p>
+<p>Next we need to add the babel configuration file <code>.babelrc</code> to our app folder. Make it look like this:</p>
+<pre><code>{
+  "presets": ["env"]
+}
+</code></pre>
+<p>This just tells babel to use <a href="">babel-preset-env</a> that we just installed but take a look as some of the other configuration settings you can specify <a href="https://babeljs.io/docs/usage/babelrc/">here</a>.</p>
+<h3 id="try-it-out"><a aria-hidden="true" tabindex="-1" href="#try-it-out"><a href="#try-it-out" style="margin-right: 10px">#</a></a>Try it Out</h3>
+<p>To try it out lets open our <code>app.js</code> file and replace this line</p>
+<pre><code>var express = require('express');
+</code></pre>
+<p>with this:</p>
+<pre><code>import express from 'express';
+</code></pre>
+<p>And then we run express with babel with this command:</p>
+<pre><code>$ babel-node app/bin/www
+</code></pre>
+<p>It works!</p>
+<p>And you will notice that if you just run <code>node app/bin/www</code> you get an error which is expected.</p>
+<p>Now lets add a npm script to make running this easier. Open up your <code>package.json</code> file and lets add a new line in the scripts section so it looks like this:</p>
+<pre><code>...
+  "scripts": {
+    "start": "node ./bin/www",
+    "start:dev": "babel-node ./app/bin/www"
+  }
+...
+</code></pre>
+<p>Now we can run our babelized app with the command:</p>
+<pre><code>npm run start:dev
+</code></pre>
+<p>You might be asking, "Why don't we just use the existing start script". We need to save that for production because many production environments use the start script to run the app, but obviously we need to change it since we know <code>node ./bin/www</code> doesn't work.</p>
+<h3 id="preparing-for-production"><a aria-hidden="true" tabindex="-1" href="#preparing-for-production"><a href="#preparing-for-production" style="margin-right: 10px">#</a></a>Preparing for Production</h3>
+<p>So to prepare our app for production we need a build step that will take our ES6 code and generate node-friendly ES5 code in a file somewhere that node can run.</p>
+<p>To do this I like to another npm script:</p>
+<pre><code>...
+  "scripts": {
+    "start": "node ./bin/www",
+    "start:dev": "babel-node ./app/bin/www",
+    "build": "rm -rf ./build &#x26;&#x26; mkdir build &#x26;&#x26; babel --out-dir ./build --source-maps --copy-files ./app"
+  }
+...
+</code></pre>
+<p>As you can see this build script removes and recreates any existing <code>build</code> folder, and then runs the command <code>babel --out-dir ./build --source-maps --copy-files ./app</code> which compiles all the javascript files and copies any other files  into the <code>build</code> folder. Checkout <a href="https://babeljs.io/docs/usage/cli/">this page</a> for more info on how the babel command works.</p>
+<p>You may want to add the <code>build</code> folder to your <code>.gitignore</code>.</p>
+<p>Then the last thing to do is to change the start script to look like this:</p>
+<pre><code>"start": "node ./app/bin/www"
+</code></pre>
+<p>And we are good to go.</p>
+<p>Just make sure you run <code>npm run build</code> as part of any deployment into production.</p>a:["$","div",null,{"className":"sm:px-8 post mt-16 lg:mt-32","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"xl:relative","children":["$","div",null,{"className":"mx-auto max-w-2xl","children":["$","article",null,{"children":[["$","header",null,{"className":"flex flex-col","children":[["$","h1",null,{"className":"text-4xl font-bold font-bold tracking-tight sm:text-5xl","children":"Express.js With ES6 and Babel"}],["$","div",null,{"className":"flex gap-3 pt-1","children":[["$","time",null,{"dateTime":"2018-02-16","className":"text-muted-foreground order-first flex items-center pr-2 text-base","children":[["$","span",null,{"className":"h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"}],["$","span",null,{"className":"ml-3","children":"February 16, 2018"}]]}],["$","span",null,{"className":"text-muted-foreground","children":"-"}],[["$","span","express",{"className":"text-muted-foreground/80","children":"express"}],["$","span","node",{"className":"text-muted-foreground/80","children":"node"}],["$","span","babel",{"className":"text-muted-foreground/80","children":"babel"}],["$","span","es6",{"className":"text-muted-foreground/80","children":"es6"}]]]}],["$","div",null,{"className":"text-accent-foreground pt-3 text-sm italic","children":["~","4 min read"]}]]}],["$","div",null,{"className":"mt-8 prose dark:prose-invert","data-mdx-content":true,"children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}]}]]}]}]}]}]}]}]}]
+3:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Express.js With ES6 and Babel - Spencer Sharp"}],["$","meta","3",{"name":"description","content":"I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."}],["$","link","4",{"rel":"alternate","type":"application/rss+xml","href":"undefined/feed.xml"}]]
+9:null

@@ -1,0 +1,111 @@
+1:HL["/_next/static/css/9d8f288a99c54fb3.css","style",{"crossOrigin":""}]
+0:["AzO8YmqLI-jVS4hv3vlbF",[[["",{"children":["posts",{"children":[["slug","2018-07-17-adding-eslint-to-your-project","d"],{"children":["__PAGE__?{\"slug\":\"2018-07-17-adding-eslint-to-your-project\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/9d8f288a99c54fb3.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:I[2286,["736","static/chunks/736-93d26bf9f492bada.js","545","static/chunks/545-972397648c423446.js","871","static/chunks/871-e93f475163439fcd.js","185","static/chunks/app/layout-58152a9375fe786b.js"],"ThemeProvider"]
+5:I[7019,["736","static/chunks/736-93d26bf9f492bada.js","545","static/chunks/545-972397648c423446.js","871","static/chunks/871-e93f475163439fcd.js","185","static/chunks/app/layout-58152a9375fe786b.js"],"Header"]
+6:I[3849,[],""]
+7:I[8656,[],""]
+8:I[4736,["736","static/chunks/736-93d26bf9f492bada.js","991","static/chunks/app/posts/page-6d06c0c42f2ef9eb.js"],""]
+2:[null,["$","html",null,{"lang":"en","className":"h-full antialiased","suppressHydrationWarning":true,"children":["$","body",null,{"className":"flex h-full","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":["$","div",null,{"className":"flex w-full","children":["$","div",null,{"className":"relative flex w-full flex-col","children":[["$","$L5",null,{}],["$","main",null,{"className":"flex-auto","children":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"className":"sm:px-8 flex h-full items-center pt-16 sm:pt-32","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"flex flex-col items-center","children":[["$","p",null,{"className":"text-base font-semibold text-zinc-400 dark:text-zinc-500","children":"404"}],["$","h1",null,{"className":"mt-4 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl","children":"Page not found"}],["$","p",null,{"className":"mt-4 text-base text-zinc-600 dark:text-zinc-400","children":"Sorry, we couldn’t find the page you’re looking for."}],["$","$L8",null,{"href":"/","children":["$","button",null,{"className":"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-4","children":"Go back home"}]}]]}]}]}]}]}],"notFoundStyles":[],"childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children",["slug","2018-07-17-adding-eslint-to-your-project","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L9","$La",null],"segment":"__PAGE__?{\"slug\":\"2018-07-17-adding-eslint-to-your-project\"}"},"styles":null}],"segment":["slug","2018-07-17-adding-eslint-to-your-project","d"]},"styles":null}],"segment":"posts"},"styles":null}]}],["$","footer",null,{"className":"mt-32 flex-none","children":["$","div",null,{"className":"sm:px-8","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"pb-16 pt-10","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"flex flex-col items-center justify-between gap-6 sm:flex-row","children":[["$","div",null,{"className":"flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200","children":[["$","$L8",null,{"href":"/about","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"About"}],["$","$L8",null,{"href":"/projects","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Projects"}],["$","$L8",null,{"href":"/speaking","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Speaking"}],["$","$L8",null,{"href":"/uses","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Uses"}]]}],["$","p",null,{"className":"text-sm text-zinc-400 dark:text-zinc-500","children":["© ",2023," Spencer Sharp. All rights reserved."]}]]}]}]}]}]}]}]}]]}]}]}]}]}],null]
+b:T1337,<h2 id="installation"><a aria-hidden="true" tabindex="-1" href="#installation"><a href="#installation" style="margin-right: 10px">#</a></a>Installation</h2>
+<p>First install the package eslint:</p>
+<pre><code>yarn add eslint --only=dev
+</code></pre>
+<p>Then initialize init and it will walk you through a typical setup:</p>
+<pre><code>yarn eslint --init
+</code></pre>
+<p>These are the options I selected. I like to start with the AirBnB template:</p>
+<pre><code>? How would you like to configure ESLint? Use a popular style guide
+? Which style guide do you want to follow? Airbnb
+? Do you use React? Yes
+? What format do you want your config file to be in? JSON
+</code></pre>
+<p>The airbnb template is already set up to use react and it will install all sorts of nice dependencies for you.</p>
+<p>And thats basically it!</p>
+<h2 id="configuration"><a aria-hidden="true" tabindex="-1" href="#configuration"><a href="#configuration" style="margin-right: 10px">#</a></a>Configuration</h2>
+<p>It creates a file called <code>eslintrc.json</code> (the file will be different depending on which format you chose). And in this file will be your configuration.</p>
+<p>If you open that file it will look like this:</p>
+<pre><code>{
+  "extends": "airbnb"
+}
+</code></pre>
+<p>So it is basically just copying all of airbnb's rules. So if we want to now change the rules we are using we need to manually add them. We can turn off or change any rule and any rule we specify in our file will override the airbnb rule.</p>
+<p>Here is an example of how to disable a rule called <code>no-underscore-dangle</code> and change the rule called <code>react/jsx-filename-extension</code> which requires all javascript files what use jsx to have the extension <code>.jsx</code>. This rule change also allows you to have <code>.js</code> extension.</p>
+<pre><code>{
+  "extends": "airbnb",
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-underscore-dangle": 0
+  }
+}
+</code></pre>
+<p>To disable eslint totally on a specific line, you can add this at the end of the line:</p>
+<pre><code>var foo = "bar" // eslint-disable-line
+</code></pre>
+<p>And to disable 1 rule on that line you can add the rule like this:</p>
+<pre><code>var foo = "bar" // eslint-disable-line no-alert
+</code></pre>
+<p>You can also do it this way:</p>
+<pre><code>// eslint-disable-next-line
+var foo = "bar"
+
+// eslint-disable-next-line no-alert
+var foo = "bar"
+</code></pre>
+<p>You can lint any file by running <code>yarn eslint path/to/file.js</code>.</p>
+<p>You can also configure your editor to display any lint issues inline for you.</p>
+<p>You can also set up a git pre-commit script to run before each commit which will enforce the lint rules in a very strong way.</p>
+<h2 id="setting-up-a-eslint-pre-commit-git-hook"><a aria-hidden="true" tabindex="-1" href="#setting-up-a-eslint-pre-commit-git-hook"><a href="#setting-up-a-eslint-pre-commit-git-hook" style="margin-right: 10px">#</a></a>Setting up a ESLint pre-commit git hook</h2>
+<p>I'm assuming you already have a git repo setup.</p>
+<p>Create a new file:</p>
+<pre><code>touch .git/hooks/pre-commit
+</code></pre>
+<p>Make the file executable:</p>
+<pre><code>chmod +x .git/hooks/pre-commit
+</code></pre>
+<p>Then paste in this code here into that file:</p>
+<pre><code>#!/bin/sh
+
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep ".jsx\{0,1\}$")
+ESLINT="$(git rev-parse --show-toplevel)/node_modules/.bin/eslint"
+
+if [[ "$STAGED_FILES" = "" ]]; then
+  exit 0
+fi
+
+PASS=true
+
+printf "\nValidating Javascript:\n"
+
+# Check for eslint
+if [[ ! -x "$ESLINT" ]]; then
+  printf "\t\033[41mPlease install ESlint\033[0m (npm i --save-dev eslint)"
+  exit 1
+fi
+
+for FILE in $STAGED_FILES
+do
+  "$ESLINT" "$FILE"
+
+  if [[ "$?" == 0 ]]; then
+    printf "\t\033[32mESLint Passed: $FILE\033[0m"
+  else
+    printf "\t\033[41mESLint Failed: $FILE\033[0m"
+    PASS=false
+  fi
+done
+
+printf "\nJavascript validation completed!\n"
+
+if ! $PASS; then
+  printf "\033[41mCOMMIT FAILED:\033[0m Your commit contains files that should pass ESLint but do not. Please fix the ESLint errors and try again.\n"
+  exit 1
+else
+  printf "\033[42mCOMMIT SUCCEEDED\033[0m\n"
+fi
+
+exit $?
+</code></pre>
+<p>This code is from [this article](<a href="https://medium.com/@shettyrahul8june/how-to-run-eslint-using-pre-commit-hook-25984fbce17e" title="https://medium.com/@shettyrahul8june/how-to-run-eslint-using-pre-commit-hook-25984fbce17e">https://medium.com/@shettyrahul8june/how-to-run-eslint-using-pre-commit-hook-25984fbce17e</a>) which references [this gist](<a href="https://gist.github.com/rashtay/328da46a99a9d7c746636df1cf769675" title="https://gist.github.com/rashtay/328da46a99a9d7c746636df1cf769675">https://gist.github.com/rashtay/328da46a99a9d7c746636df1cf769675</a>).</p>
+<p>Now anytime someone commits, any javascript files included in the commit will have to pass the lint test!</p>a:["$","div",null,{"className":"sm:px-8 post mt-16 lg:mt-32","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"xl:relative","children":["$","div",null,{"className":"mx-auto max-w-2xl","children":["$","article",null,{"children":[["$","header",null,{"className":"flex flex-col","children":[["$","h1",null,{"className":"text-4xl font-bold font-bold tracking-tight sm:text-5xl","children":"Adding ESLint to Your Project with a Git Hook"}],["$","div",null,{"className":"flex gap-3 pt-1","children":[["$","time",null,{"dateTime":"2018-07-17","className":"text-muted-foreground order-first flex items-center pr-2 text-base","children":[["$","span",null,{"className":"h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"}],["$","span",null,{"className":"ml-3","children":"July 17, 2018"}]]}],["$","span",null,{"className":"text-muted-foreground","children":"-"}],[["$","span","javascript",{"className":"text-muted-foreground/80","children":"javascript"}],["$","span","git",{"className":"text-muted-foreground/80","children":"git"}]]]}],["$","div",null,{"className":"text-accent-foreground pt-3 text-sm italic","children":["~","3 min read"]}]]}],["$","div",null,{"className":"mt-8 prose dark:prose-invert","data-mdx-content":true,"children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}]}]]}]}]}]}]}]}]}]
+3:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Adding ESLint to Your Project with a Git Hook - Spencer Sharp"}],["$","meta","3",{"name":"description","content":"I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."}],["$","link","4",{"rel":"alternate","type":"application/rss+xml","href":"undefined/feed.xml"}]]
+9:null

@@ -1,0 +1,212 @@
+1:HL["/_next/static/css/9d8f288a99c54fb3.css","style",{"crossOrigin":""}]
+0:["AzO8YmqLI-jVS4hv3vlbF",[[["",{"children":["posts",{"children":[["slug","2018-08-23-access-and-refresh-token-handling-with-redux","d"],{"children":["__PAGE__?{\"slug\":\"2018-08-23-access-and-refresh-token-handling-with-redux\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/9d8f288a99c54fb3.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:I[2286,["736","static/chunks/736-93d26bf9f492bada.js","545","static/chunks/545-972397648c423446.js","871","static/chunks/871-e93f475163439fcd.js","185","static/chunks/app/layout-58152a9375fe786b.js"],"ThemeProvider"]
+5:I[7019,["736","static/chunks/736-93d26bf9f492bada.js","545","static/chunks/545-972397648c423446.js","871","static/chunks/871-e93f475163439fcd.js","185","static/chunks/app/layout-58152a9375fe786b.js"],"Header"]
+6:I[3849,[],""]
+7:I[8656,[],""]
+8:I[4736,["736","static/chunks/736-93d26bf9f492bada.js","991","static/chunks/app/posts/page-6d06c0c42f2ef9eb.js"],""]
+2:[null,["$","html",null,{"lang":"en","className":"h-full antialiased","suppressHydrationWarning":true,"children":["$","body",null,{"className":"flex h-full","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":["$","div",null,{"className":"flex w-full","children":["$","div",null,{"className":"relative flex w-full flex-col","children":[["$","$L5",null,{}],["$","main",null,{"className":"flex-auto","children":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"className":"sm:px-8 flex h-full items-center pt-16 sm:pt-32","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"flex flex-col items-center","children":[["$","p",null,{"className":"text-base font-semibold text-zinc-400 dark:text-zinc-500","children":"404"}],["$","h1",null,{"className":"mt-4 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl","children":"Page not found"}],["$","p",null,{"className":"mt-4 text-base text-zinc-600 dark:text-zinc-400","children":"Sorry, we couldn’t find the page you’re looking for."}],["$","$L8",null,{"href":"/","children":["$","button",null,{"className":"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-4","children":"Go back home"}]}]]}]}]}]}]}],"notFoundStyles":[],"childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children",["slug","2018-08-23-access-and-refresh-token-handling-with-redux","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L9","$La",null],"segment":"__PAGE__?{\"slug\":\"2018-08-23-access-and-refresh-token-handling-with-redux\"}"},"styles":null}],"segment":["slug","2018-08-23-access-and-refresh-token-handling-with-redux","d"]},"styles":null}],"segment":"posts"},"styles":null}]}],["$","footer",null,{"className":"mt-32 flex-none","children":["$","div",null,{"className":"sm:px-8","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"pb-16 pt-10","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"flex flex-col items-center justify-between gap-6 sm:flex-row","children":[["$","div",null,{"className":"flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200","children":[["$","$L8",null,{"href":"/about","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"About"}],["$","$L8",null,{"href":"/projects","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Projects"}],["$","$L8",null,{"href":"/speaking","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Speaking"}],["$","$L8",null,{"href":"/uses","className":"transition hover:text-teal-500 dark:hover:text-teal-400","children":"Uses"}]]}],["$","p",null,{"className":"text-sm text-zinc-400 dark:text-zinc-500","children":["© ",2023," Spencer Sharp. All rights reserved."]}]]}]}]}]}]}]}]}]]}]}]}]}]}],null]
+b:T30e9,<p>Here is the approach I've used recently and it seems to work out pretty well. Its very similar to the approach I found <a href="https://michaelwashburnjr.com/best-way-to-store-tokens-redux/" title="https://michaelwashburnjr.com/best-way-to-store-tokens-redux/">here</a>. In this example I'm dealing with accessToken + refreshToken, but this could easily be adapted to different kinds of tokens (a JWT auth for example).</p>
+<h3 id="break-it-down"><a aria-hidden="true" tabindex="-1" href="#break-it-down"><a href="#break-it-down" style="margin-right: 10px">#</a></a>Break it down</h3>
+<p>First we'll make sure that redux has gets the token. In my case this means passing it from the server after the authentication callback.</p>
+<p>Then we will use a simple redux subscriber to store our auth tokens in the browser localStorage. Using a subscriber will keep it synced so that anytime the auth token in the redux state changes it updates it in the localStorage.</p>
+<p>Then we'll make sure that anytime we refresh the page, we load in the auth tokens from localStorage when creating the store.</p>
+<p>Then we'll add some middleware that happens before each outgoing HTTP request that will refresh the token if needed, and update the redux state with the new tokens, and our subscriber will automatically update the token in localStorage.</p>
+<h3 id="get-the-token-from-the-server-to-redux"><a aria-hidden="true" tabindex="-1" href="#get-the-token-from-the-server-to-redux"><a href="#get-the-token-from-the-server-to-redux" style="margin-right: 10px">#</a></a>Get the Token from the Server to Redux</h3>
+<p>You can probably skip this part if you are already getting your auth tokens to redux some other way.</p>
+<p>In my case, I'm authenticating with Microsofts Oauth2 service. and the tokens are being sent to the server via a RedirectURI callback, that means I need to pass the tokens from the server to the client. I don't store it in the session or database, Instead I pass it back to the client using the <code>window.__PRELOADED_STATE__</code> demonstrated in the <a href="https://redux.js.org/recipes/serverrendering">Redux server rendering documentation</a>.</p>
+<p>I've decided to store my auth tokens in redux under <code>state.auth.tokens</code>, so my preloadedState object will look like this:</p>
+<pre><code>const preloadedState = {
+  auth: {
+    tokens: { /* Auth token data goes here */ }
+  }
+}
+</code></pre>
+<p>Then we set that as the value of the <code>window.__PRELOADED_STATE__</code>, in the server rendered html like this (Making sure to include these lines BEFORE loading in the client js bundle):</p>
+<pre><code>&#x3C;script>
+  window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/&#x3C;/g, '\\u003c')}
+  
+  /* The string replace is to prevent injections into our preloaded state. Check the redux server rendering docs for more info */
+&#x3C;/script>
+</code></pre>
+<p>Then when loading the store, load in the <code>window.__PRELOADED_STATE__</code> as the initial state when creating the redux store:</p>
+<pre><code>const store = createStore(reducer, window.__PRELOADED_STATE__)
+</code></pre>
+<h3 id="sync-auth-state-to-localstorage"><a aria-hidden="true" tabindex="-1" href="#sync-auth-state-to-localstorage"><a href="#sync-auth-state-to-localstorage" style="margin-right: 10px">#</a></a>Sync Auth State to localStorage</h3>
+<p>Thanks again to <a href="https://michaelwashburnjr.com/best-way-to-store-tokens-redux/">this post</a> for the idea of using a simple redux store subscriber to keep localStorage synced with out auth section of the redux store.</p>
+<p>I made a function that will serialize and set the localStorage variables, and then call that function from <code>store.subscribe</code></p>
+<pre><code>function setAuthState(state) {
+  try {
+    localStorage.setItem('state.auth.tokens', JSON.stringify((state.auth || {}).tokens));
+  } catch (err) { return undefined; }
+}
+
+store.subscribe(() => {
+  setAuthState(store.getState())
+});
+</code></pre>
+<p>Be sure to checkout the <a href="https://redux.js.org/api/store#subscribe">documentation for store.subscribe</a>. You can also checkout <a href="https://egghead.io/lessons/javascript-redux-persisting-the-state-to-the-local-storage">this video</a> by Dan Abramov on how to use subscribe to store the state into localStorage.</p>
+<p>Some other libraries for watching the state for mutations are <a href="https://github.com/jprichardson/redux-watch">redux-watch</a> and <a href="https://github.com/ashaffer/redux-subscribe">redux-subscribe</a>. They may be a better option later, but for now I'm going with this simple subscribe approach.</p>
+<h3 id="load-auth-from-localstorage-on-refresh"><a aria-hidden="true" tabindex="-1" href="#load-auth-from-localstorage-on-refresh"><a href="#load-auth-from-localstorage-on-refresh" style="margin-right: 10px">#</a></a>Load Auth From localStorage on Refresh</h3>
+<p>Then I made a function to get and deserialize the state from localStorage:</p>
+<pre><code>function getAuthState() {
+  try {
+    const tokens = JSON.parse(localStorage.getItem('state.auth.tokens')) || undefined;
+    const user = JSON.parse(localStorage.getItem('state.auth.user')) || undefined;
+
+    return { auth: { tokens, user } }
+  } catch (err) { return undefined; }
+}
+</code></pre>
+<p>Then change our create store to something like this:</p>
+<pre><code>const store = createStore(
+  reducer,
+  { ...getAuthState(), ...window.__PRELOADED_STATE__ }
+ )
+</code></pre>
+<p>And I was able to refresh the page and the auth tokens persist. So it works!</p>
+<h3 id="automatic-token-refreshing"><a aria-hidden="true" tabindex="-1" href="#automatic-token-refreshing"><a href="#automatic-token-refreshing" style="margin-right: 10px">#</a></a>Automatic Token Refreshing</h3>
+<p>I debated whether or not to include this part, because there's so many different ways to implement it, but the ways I think are truly nice and elegant can be a bit complex for a blog post. But I'll try anyway. Hopefully people can get a few good ideas from this.</p>
+<p>Now this step is going to vary a lot depending on your implementation. I was greatly inspired by <a href="https://github.com/erikras/react-redux-universal-hot-example">this library (erikras/react-redux-universal-hot-example)</a> which has a really nice middleware setup for making API requests by dispatching redux actions.</p>
+<p>Although my final implementation looks much more like that the middleware found in the <a href="https://github.com/erikras/react-redux-universal-hot-example">erikras/react-redux-universal-hot-example</a> mentioned above, here is an exmample of how you might do a simplified version of some API request middleware with the refresh token.</p>
+<p>I'm assuming you are using a function dispatcher middleware like <a href="https://github.com/reduxjs/redux-thunk">redux-thunk</a> and <a href="https://github.com/visionmedia/superagent">superagent</a> as the request library.</p>
+<p>You'll also notice that I loaded my tokens with an <code>expires_at</code> attribute to help calculate when a refresh is needed.</p>
+<p>The middleware is in a file called <code>requestMiddleware.js</code> and looks something like this like this:</p>
+<pre><code>export default function requestMiddleware() {
+  return ({ dispatch, getState }) => next => (action) => {
+    const {
+      request,
+    } = action;
+
+    if (!request) {
+      return next(action);
+    }
+
+    const { tokens } = getState().auth;
+
+    // 5 minutes from now
+    const refreshThreshold = (new Date.getTime() + 300000);
+
+    if (tokens.refresh_token &#x26;&#x26; refreshThreshold > tokens.expires_at) {
+      return superagent.post('/path/to/renew')
+        .send({ refresh_token: tokens.refresh_token })
+        .end((err, { body } = {}) => {
+          dispatch({ type: 'SET_TOKENS', payload: body });
+          request(body);
+        });
+    }
+    return request(tokens);
+  };
+}
+</code></pre>
+<p>Dont forget to apply the middleware:</p>
+<pre><code>import { createStore, applyMiddleware } from 'redux';
+import requestMiddleware from './middleware/requestMiddleware';
+import rootReducer from './reducers/index';
+
+const store = createStore(
+  rootReducer,
+  applyMiddleware(requestMiddleware())
+);
+</code></pre>
+<p>Add a reducer to capture the <code>SET_TOKEN</code> action:</p>
+<pre><code>export default function reducer(state = initialState, action = {}) {
+  switch (action.type) {
+    case SET_TOKENS:
+      return {
+        ...state,
+        auth: { tokens: action.payload },
+      };
+    default:
+      return state;
+  }
+}
+</code></pre>
+<p>And now we can dispatch actions like this:</p>
+<pre><code>export default function sendAnyRequest() {
+  return (dispatch) => {
+    return {
+      request: (tokens) => superagent.post('/some/random/request')
+        .send({ foo: 'bar' })
+        .end((err, { body } = {}) => {
+          dispatch({ type: 'SOME_EVENT', payload: body });
+        });
+    }
+  }
+}
+</code></pre>
+<h3 id="wrap-it-up"><a aria-hidden="true" tabindex="-1" href="#wrap-it-up"><a href="#wrap-it-up" style="margin-right: 10px">#</a></a>Wrap it up</h3>
+<p>And before making any request it will first check the validity of the refresh token and refresh it if needed. And if a refresh does occur it will set the new token in the redux store, which will be automatically written to the localStorage by the subscriber.</p>
+<p>Noice!</p>
+<p>I highly recommend you read through the code of this project <a href="https://github.com/erikras/react-redux-universal-hot-example">erikras/react-redux-universal-hot-example</a>, specifically the <code>ApiClient.js</code>, <code>clientMiddleware.js</code>, and see how the request actions are dispatched.</p>
+<p>As I said, I used that example heavily when setting up my redux store. Here is what my middleware file looks like:</p>
+<pre><code>import { SIGN_OUT, SET_TOKENS } from '../modules/auth';
+
+export default function clientMiddleware(client) {
+  return ({ dispatch, getState }) => next => (action) => {
+    if (typeof action === 'function') {
+      return action(dispatch, getState);
+    }
+
+    const {
+      promise, types, ...rest
+    } = action;
+    if (!promise) {
+      return next(action);
+    }
+
+    // eslint-disable-next-line no-param-reassign
+    client.token = (getState().auth.tokens || {}).access_token;
+
+    const [REQUEST, SUCCESS, FAILURE] = types;
+    next({ ...rest, type: REQUEST });
+
+    let actionPromise = Promise.resolve();
+    const { tokens } = getState().auth;
+
+    const refreshThreshold = (new Date().getTime() + 300000); // 5 minutes from now
+
+    if (tokens.refresh_token &#x26;&#x26; refreshThreshold > tokens.expires_at) {
+      actionPromise = client.post('/my-server/renew', { data: { refresh_token: tokens.refresh_token } })
+        .then(
+          (result) => {
+            client.token = result.access_token;
+            return next({
+              ...rest, result, type: SET_TOKENS,
+            });
+          },
+          errors => next({
+            ...rest, errors, type: SIGN_OUT,
+          }),
+        )
+        .then(() => promise(client));
+    } else {
+      actionPromise = promise(client);
+    }
+
+    actionPromise.then(
+      result => next({ ...rest, result, type: SUCCESS }),
+      errors => next({ ...rest, errors, type: FAILURE }),
+    ).catch((error) => {
+      console.error('MIDDLEWARE ERROR:', error);
+      next({ ...rest, error, type: FAILURE });
+    });
+
+    return actionPromise;
+  };
+}
+</code></pre>
+<p>And I can dispatch really clean actions that look like this:</p>
+<pre><code>export function loadOne(_id) {
+  return {
+    types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],
+    promise: client => client.get('/items/'),
+  };
+}
+</code></pre>
+<p>And the tokens are automatically refreshed and persisted.</p>
+<p>I still have some cleaning up to do with my setup. I'd like to modularize that refresh token bit. I first tried to put it into its own middleware, but the existing client middleware dispatches an initial action (LOAD in the example above) that triggers the loading state and adds spinners. Having the refresh token part in its own middleware delayed the loading state until after the refresh so it made for a bad user experience.</p>
+<p>It seems to be pretty functional and reliable so far. I'll be sure to update this article if I discover any problems or brittleness with this implementation.</p>
+<p>If you notice any mistakes in here, or if you have any ideas on how to improve this setup, please let me know in the comments. I'm always looking for better patterns to follow.</p>a:["$","div",null,{"className":"sm:px-8 post mt-16 lg:mt-32","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","div",null,{"className":"xl:relative","children":["$","div",null,{"className":"mx-auto max-w-2xl","children":["$","article",null,{"children":[["$","header",null,{"className":"flex flex-col","children":[["$","h1",null,{"className":"text-4xl font-bold font-bold tracking-tight sm:text-5xl","children":"Access Token Handling (Automatic Refresh) with React + Redux"}],["$","div",null,{"className":"flex gap-3 pt-1","children":[["$","time",null,{"dateTime":"2018-08-23","className":"text-muted-foreground order-first flex items-center pr-2 text-base","children":[["$","span",null,{"className":"h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"}],["$","span",null,{"className":"ml-3","children":"August 23, 2018"}]]}],["$","span",null,{"className":"text-muted-foreground","children":"-"}],[["$","span","react",{"className":"text-muted-foreground/80","children":"react"}],["$","span","redux",{"className":"text-muted-foreground/80","children":"redux"}],["$","span","authentication",{"className":"text-muted-foreground/80","children":"authentication"}]]]}],["$","div",null,{"className":"text-accent-foreground pt-3 text-sm italic","children":["~","8 min read"]}]]}],["$","div",null,{"className":"mt-8 prose dark:prose-invert","data-mdx-content":true,"children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}]}]]}]}]}]}]}]}]}]
+3:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Access Token Handling (Automatic Refresh) with React + Redux - Spencer Sharp"}],["$","meta","3",{"name":"description","content":"I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."}],["$","link","4",{"rel":"alternate","type":"application/rss+xml","href":"undefined/feed.xml"}]]
+9:null
