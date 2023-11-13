@@ -9,6 +9,8 @@ import { Container } from "@/components/container";
 import avatarImage from "@/images/avatar.jpg";
 import { ModeToggle } from "@/components/mode-toggle";
 import { cn } from "@/lib/utils";
+import { MobileNavigation } from "@/components/mobile-nav";
+import { siteConfig } from "@/config/site";
 
 function NavItem({
   href,
@@ -43,9 +45,11 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<"nav">) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/posts">Blog</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
+        {siteConfig.nav.map((item) => (
+          <NavItem key={item.href} href={item.href}>
+            {item.label}
+          </NavItem>
+        ))}
       </ul>
     </nav>
   );
@@ -278,6 +282,7 @@ export function Header() {
                 )}
               </div>
               <div className="flex flex-1 justify-end md:justify-center">
+                <MobileNavigation className="pointer-events-auto md:hidden" />
                 <DesktopNavigation className="pointer-events-auto hidden md:block" />
               </div>
               <div className="flex justify-end md:flex-1">

@@ -4,12 +4,7 @@ import Link from "next/link";
 import { Container } from "@/components/container";
 import { type Post, getAllPosts } from "@/lib/api";
 import { formatDate } from "@/lib/format-date";
-import {
-  GitHubIcon,
-  Icons,
-  LinkedInIcon,
-  TwitterIcon,
-} from "@/components/icons";
+import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import bluehostLogo from "@/images/bluehost_logo.jpeg";
 import pvLogo from "@/images/pv_logo.jpeg";
@@ -20,6 +15,7 @@ import holomeetingLogo from "@/images/holomeetin_logo.jpeg";
 import thrivelotLogo from "@/images/thrivelot_logo.jpeg";
 import { Card } from "@/components/card";
 import { Input } from "@/components/ui/input";
+import { siteConfig } from "@/config/site";
 
 function Post({ post }: { post: Post }) {
   return (
@@ -206,24 +202,24 @@ export default async function HomePage() {
             Software designer, founder, and amateur astronaut.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Nick, a software developer based in Lisbon, Portugal. I code,
-            and sometimes people pay me for it.
+            I’m Nick, a software developer and aspiring founder based in Lisbon,
+            Portugal.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com/thenmajor"
+              href={siteConfig.links.twitter}
               aria-label="Follow on Twitter"
-              icon={TwitterIcon}
+              icon={Icons.twitter}
             />
             <SocialLink
-              href="https://github.com/nmajor"
+              href={siteConfig.links.github}
               aria-label="Follow on GitHub"
-              icon={GitHubIcon}
+              icon={Icons.github}
             />
             <SocialLink
-              href="https://linkedin.com/nmajor"
+              href={siteConfig.links.linkedin}
               aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
+              icon={Icons.linkedin}
             />
           </div>
         </div>

@@ -2,6 +2,8 @@ import {
   Laptop,
   Moon,
   SunMedium,
+  ChevronDown,
+  X,
   Mail,
   type LucideIcon,
   Briefcase,
@@ -12,12 +14,12 @@ export type Icon = LucideIcon;
 
 export const Icons = {
   // logo: Command,
-  // close: X,
+  close: X,
   // spinner: Loader2,
   // chevronLeft: ChevronLeft,
   // chevronRight: ChevronRight,
   // chevronUp: ChevronUp,
-  // chevronDown: ChevronDown,
+  chevronDown: ChevronDown,
   briefcase: Briefcase,
   // trash: Trash,
   // post: FileText,
@@ -31,7 +33,9 @@ export const Icons = {
   // user: User,
   // arrowRight: ArrowRight,
   // help: HelpCircle,
-  // pizza: Pizza,
+  twitter: TwitterIcon,
+  github: GitHubIcon,
+  linkedin: LinkedInIcon,
   download: Download,
   sun: SunMedium,
   moon: Moon,
@@ -43,8 +47,8 @@ export const Icons = {
 
 export function TwitterIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path d="M20.055 7.983c.011.174.011.347.011.523 0 5.338-3.92 11.494-11.09 11.494v-.003A10.755 10.755 0 0 1 3 18.186c.308.038.618.057.928.058a7.655 7.655 0 0 0 4.841-1.733c-1.668-.032-3.13-1.16-3.642-2.805a3.753 3.753 0 0 0 1.76-.07C5.07 13.256 3.76 11.6 3.76 9.676v-.05a3.77 3.77 0 0 0 1.77.505C3.816 8.945 3.288 6.583 4.322 4.737c1.98 2.524 4.9 4.058 8.034 4.22a4.137 4.137 0 0 1 1.128-3.86A3.807 3.807 0 0 1 19 5.274a7.657 7.657 0 0 0 2.475-.98c-.29.934-.9 1.729-1.713 2.233A7.54 7.54 0 0 0 22 5.89a8.084 8.084 0 0 1-1.945 2.093Z" />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" {...props}>
+      <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
     </svg>
   );
 }
