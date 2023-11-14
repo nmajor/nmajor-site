@@ -16,6 +16,9 @@ import thrivelotLogo from "@/images/thrivelot_logo.jpeg";
 import { Card } from "@/components/card";
 import { Input } from "@/components/ui/input";
 import { siteConfig } from "@/config/site";
+import { env } from "@/env.mjs";
+import jsonp from 'jsonp';
+import { Newsletter } from "@/components/newsletter";
 
 function Post({ post }: { post: Post }) {
   return (
@@ -43,31 +46,7 @@ function SocialLink({
   );
 }
 
-function Newsletter() {
-  // https://blog.afrieirham.com/how-to-integrate-mailchimp-with-react
-  return (
-    <form action="/thank-you" className="rounded-2xl border p-6">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <Icons.mail className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
-      </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
-      </p>
-      <div className="mt-6 flex">
-        <Input
-          type="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-        />
-        <Button type="submit" className="ml-4 flex-none">
-          Join
-        </Button>
-      </div>
-    </form>
-  );
-}
+
 
 interface Role {
   company: string;
@@ -231,13 +210,13 @@ export default async function HomePage() {
             <br />
             All mercy choked with the habit of faulty runs,
             <br />
-            And the program's spirit, seeking for perfection,
+            And the program&apos;s spirit, seeking for perfection,
             <br />
             With Stack Overflow by its side come hot from GitHub,
             <br />
-            Shall in these repositories with a developer's voice
+            Shall in these repositories with a developer&apos;s voice
             <br />
-            Cry "Havoc!" and let slip the dogs of code,
+            Cry &quot;Havoc!&quot; and let slip the dogs of code,
             <br />
             That this flawed script shall smell above the servers
             <br />

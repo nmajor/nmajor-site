@@ -15,7 +15,7 @@ const projects = [
   {
     name: "Busbuddy",
     description:
-      "Busbuddy empowers school administrators to manage their bus routes and communicate with parents.",
+      "Busbuddy empowers school administrators to manage their bus routes and effectively communicate with parents.",
     link: { href: "https://www.busbuddy.io", label: "busbuddy.io" },
     logo: busbuddy,
   },
