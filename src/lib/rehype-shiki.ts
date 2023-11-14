@@ -6,7 +6,7 @@ import { modifyChildren as unistUtilModifyChildren } from "unist-util-modify-chi
 import { toText as hastUtilToText } from "hast-util-to-text";
 import type * as Shiki from "shiki";
 import rehypeParse from "rehype-parse";
-import { html } from "@leafac/html";
+import html from "@leafac/html";
 
 export const rehypeShiki: unifiedTypes.Plugin<
   [
