@@ -1,6 +1,7 @@
 ---
 title: Node Env Variables - dotenv Workaround
 date: 2018-08-22
+description: In this post I'm going to go over how to use dotenv to manage your environmental variables in node.
 tags:
 - node
 hero: ''

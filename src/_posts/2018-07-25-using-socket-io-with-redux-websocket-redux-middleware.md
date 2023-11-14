@@ -1,6 +1,7 @@
 ---
 title: Using Socket.io with Redux - Websocket Redux Middleware
 date: 2018-08-21
+description: In this post I'm going to go over how to use socket.io with Redux to manage your websocket connections.
 tags:
 - javascript
 - react

@@ -42,7 +42,7 @@ export function PostLayout({
                 </div>
               )}
             </header>
-            <Prose className="mt-8" data-mdx-content>
+            <Prose className="mt-8" data-md-content>
               {children}
             </Prose>
           </article>

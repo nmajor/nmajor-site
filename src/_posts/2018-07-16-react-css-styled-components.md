@@ -1,6 +1,7 @@
 ---
 title: React CSS - Styled Components
 date: 2018-07-16
+description: In this post I'm going to go over how to use Styled Components to manage your CSS in your React app.
 tags:
 - react
 - css

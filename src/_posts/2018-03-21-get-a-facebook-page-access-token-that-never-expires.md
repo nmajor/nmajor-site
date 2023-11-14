@@ -1,6 +1,7 @@
 ---
 title: Get a Facebook Page Access Token That Never Expires
 date: 2018-03-21
+description: How to get a long-lived Facebook page access token that never expires
 tags:
 - facebook
 hero: "/uploads/2018/03/21/So, let's take it to the streets and celebrate our freedom!.png"

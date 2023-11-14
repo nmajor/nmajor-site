@@ -1,6 +1,7 @@
 ---
 title: Multi Tenancy with Express/Mongoose
 date: 2018-10-03
+description: In this post I'm going to go over how to add a multi-tenant layer to your express/mongoose app.
 tags:
 - mongoose
 - express

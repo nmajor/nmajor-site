@@ -54,11 +54,13 @@ function getParser() {
 
 export interface Post {
   title: string;
+  description: string;
   date: string;
   tags: string[];
   slug: string;
   readTime: string;
   html: string;
+  md: string;
 }
 
 export async function getPostBySlug(id: string) {
@@ -74,11 +76,13 @@ export async function getPostBySlug(id: string) {
 
   return {
     title: data.title,
+    description: data.description,
     slug: realSlug,
     tags: data.tags,
     date: `${data.date?.toISOString().slice(0, 10)}`,
     readTime: readTime.text,
     html: html.value.toString(),
+    md: content,
   } as Post;
 }
 

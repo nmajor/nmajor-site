@@ -24,6 +24,7 @@ function Post({ post }: { post: Post }) {
       <Card.Eyebrow as="time" dateTime={post.date} decorate>
         {formatDate(post.date)}
       </Card.Eyebrow>
+      <Card.Description>{post.description}</Card.Description>
       <Card.Cta>Read article</Card.Cta>
     </Card>
   );
@@ -183,10 +184,6 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button className="group mt-6 w-full">
-        Download CV
-        <Icons.download className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
     </div>
   );
 }
@@ -199,11 +196,55 @@ export default async function HomePage() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Welcome!
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Nick, a software developer and aspiring founder based in Lisbon,
-            Portugal.
+            Oh, forgive me, thou glitching piece of code,
+            <br />
+            That I am meek and gentle with these debuggers!
+            <br />
+            Thou art the bugs in the noblest software
+            <br />
+            That ever ran in the flow of bytes.
+            <br />
+            Woe to the hand that wrote this faulty script!
+            <br />
+            Over thy errors now do I prophesy—
+            <br />
+            Which, like silent functions, do throw their syntax errors
+            <br />
+            To beg for the logic and correction of my code—
+            <br />
+            A curse shall befall upon the lines of developers.
+            <br />
+            Domestic bugs and fierce syntax conflicts
+            <br />
+            Shall clutter all the functions of this program.
+            <br />
+            Errors and exceptions shall be so in use,
+            <br />
+            And dreadful bugs so familiar,
+            <br />
+            That programmers shall but chuckle when they behold
+            <br />
+            Their code dissected with the hands of debugging,
+            <br />
+            All mercy choked with the habit of faulty runs,
+            <br />
+            And the program's spirit, seeking for perfection,
+            <br />
+            With Stack Overflow by its side come hot from GitHub,
+            <br />
+            Shall in these repositories with a developer's voice
+            <br />
+            Cry "Havoc!" and let slip the dogs of code,
+            <br />
+            That this flawed script shall smell above the servers
+            <br />
+            With error logs, groaning for a fix.
+            <br />
+            <br />
+            -- William GPTspeare, Julius Server (Act 3, Scene 1)
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

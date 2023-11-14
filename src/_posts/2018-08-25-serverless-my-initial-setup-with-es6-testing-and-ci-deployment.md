@@ -2,6 +2,7 @@
 title: Robust Serverless API Boilerplate with ES6, Folder Structure, Testing (Mocha
   + Chai), and ESLint
 date: 2018-08-25
+description: In this post I'm going to go over how to setup a robust serverless api boilerplate with ES6, folder structure, testing (mocha + chai), and eslint.
 tags:
 - serverless
 - eslint

@@ -1,6 +1,7 @@
 ---
 title: Access Token Handling (Automatic Refresh) with React + Redux
 date: 2018-08-23
+description: In this post I'm going to go over how to use React + Redux to manage your auth tokens and automatically refresh them when they are about to expire.
 tags:
 - react
 - redux

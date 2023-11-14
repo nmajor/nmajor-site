@@ -1,6 +1,7 @@
 ---
 title: Executable Binary Files with Serverless Framework and Webpack - AWS Lambda
 date: 2018-09-01
+description: In this post I'm going to go over how to use executable binary files with the serverless framework and webpack.
 tags:
 - serverless
 - javascript

@@ -1,6 +1,7 @@
 ---
 title: Deploying Node.js on Azure App Services
 date: 2018-02-14
+description: In this post I'm going to go over how to deploy a Node.js app to Azure App Services and also mention some of the things I learned from working with Azure.
 tags:
 - node
 - azure

@@ -1,6 +1,7 @@
 ---
 title: Serverless Framework S3 Permissions (Serverless IAM Permissions)
 date: 2018-09-13
+description: In this post I'm going to go over how to give your serverless project access to an S3 bucket.
 tags:
 - serverless
 - javascript

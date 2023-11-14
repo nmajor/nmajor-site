@@ -1,6 +1,7 @@
 export const siteConfig = {
-  name: "Nick Major",
-  description: "A wicked coder and bearded person",
+  name: "NMajor Studios",
+  author: "Nick Major",
+  description: "Cry Havoc! and let slip the dogs of code",
   links: {
     twitter: "https://www.x.com/thenmajor",
     github: "https://www.github.com/nmajor",

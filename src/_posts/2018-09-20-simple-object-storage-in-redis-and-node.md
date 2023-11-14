@@ -1,6 +1,7 @@
 ---
 title: Simple Object Storage in Redis (Node.js)
 date: 2018-10-05
+description: In this post I'm going to go over how to use redis as a simple object storage for your node.js app.
 tags:
 - node
 - redis

@@ -1,6 +1,7 @@
 ---
 title: Adding ESLint to Your Project with a Git Hook
 date: 2018-07-17
+description: In this post I'm going to go over how to add ESLint to your project and how to set up a git pre-commit hook to make sure all your code is linted before you commit.
 tags:
 - javascript
 - git

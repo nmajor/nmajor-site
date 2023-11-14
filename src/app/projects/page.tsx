@@ -3,7 +3,8 @@ import Image from "next/image";
 
 import { Card } from "@/components/card";
 import { SimpleLayout } from "@/components/simple-layout";
-import steamleftLogo from "./steamleft.jpg";
+import steamleft from "./steamleft.jpg";
+import busbuddy from "./busbuddy.png";
 
 const projects = [
   {
@@ -12,11 +13,18 @@ const projects = [
       "Foxpage uses AI to easily generate beautiful landing pages for product validation or building an email list.",
   },
   {
+    name: "Busbuddy",
+    description:
+      "Busbuddy empowers school administrators to manage their bus routes and communicate with parents.",
+    link: { href: "https://www.busbuddy.io", label: "busbuddy.io" },
+    logo: busbuddy,
+  },
+  {
     name: "Steamleft (Depricated)",
     description:
       "Steamleft was a Ruby on Rails app that whimsically told you how much time you had left to complete your steam library. It had over 650,000 unique visitors, and 500,000 participating users in its first week. It was featured on PCGamer, Kotaku, The Escapist, and dozens of more online outlets.",
     link: { href: "https://github.com/nmajor/steamspan", label: "github" },
-    logo: steamleftLogo,
+    logo: steamleft,
   },
 ];
 

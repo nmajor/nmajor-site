@@ -1,6 +1,7 @@
 ---
 title: Using Action Cable with Redux - Websocket Redux Middleware
 date: 2018-07-25
+description: In this post I'm going to go over how to use Action Cable with Redux to manage your websocket connections.
 tags:
 - redux
 - javascript

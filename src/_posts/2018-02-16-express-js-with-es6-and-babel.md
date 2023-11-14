@@ -1,6 +1,7 @@
 ---
 title: Express.js With ES6 and Babel
 date: 2018-02-16
+description: Express.js doesn't come with es6 out of the box. But its actually not that hard to add.
 tags:
 - express
 - node

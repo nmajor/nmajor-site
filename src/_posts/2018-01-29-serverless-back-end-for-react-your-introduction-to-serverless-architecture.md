@@ -1,5 +1,6 @@
 ---
 title: Serverless Back-End for React - Your Introduction to Serverless Architecture
+description: A tutorial on how to build a serverless back-end for a React app using AWS Lambda.
 date: 2018-01-29
 tags:
 - serverless
