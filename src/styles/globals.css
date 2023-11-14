@@ -90,6 +90,10 @@
   @apply list-decimal py-3 pr-3;
 }
 
+.post a {
+  @apply text-primary underline underline-offset-4 hover:text-primary/80;
+}
+
 .post pre.shiki.poimandres {
   @apply m-3 overflow-x-auto rounded-lg p-4;
 }

@@ -28,9 +28,11 @@ I like to just create a folder in my project called `bin` and put them all in th
 
 After you put the executables in the `bin` folder, put this in your `serverless.yml` file:
 
+```yml
     package:
       include:
         - bin/*
+```
 
 Your files should maintain their permissions.
 
@@ -40,12 +42,14 @@ Here is where it gets tricky. The package includes are not honored by the `serve
 
 But first lets copy our files with [copy-webpack-plugin](https://webpack.js.org/plugins/copy-webpack-plugin/ "https://webpack.js.org/plugins/copy-webpack-plugin/"). Do do this you can checkout the [documentation here](), or you can add this to your webpack config:
 
+```yml
       plugins: [
         new CopyWebpackPlugin([{
           from: 'bin/',
           to: 'bin/'
         }]),
       ]
+```
 
 Pretty easy.
 
@@ -55,6 +59,7 @@ I did find a plugin called [webpack-permissions-plugin ](https://www.npmjs.com/p
 
 So here's the simple plugin I whipped up:
 
+```js
     const fs = require('fs');
     
     function WebpackBinPermission(options) {
@@ -76,15 +81,19 @@ So here's the simple plugin I whipped up:
     };
     
     module.exports = WebpackBinPermission;
+```
 
 As you can see, its pretty simple and all it does it changes the permissions of everything in the `/bin` folder to `755`. And for me it works like a charm.
 
 Put that plugin code in a new file called `webpack-bin-permissions.js`.Then at the top of your webpack config file, import it like this: 
 
+```js
     const WebpackBinPermission = require('webpack-bin-permissions')
+```
 
 To then to use it, you just have to pair it with the [copy-webpack-plugin](https://webpack.js.org/plugins/copy-webpack-plugin/ "https://webpack.js.org/plugins/copy-webpack-plugin/") in your webpack config like this:
 
+```js
       plugins: [
         new CopyWebpackPlugin([{
           from: 'bin/',
@@ -92,6 +101,7 @@ To then to use it, you just have to pair it with the [copy-webpack-plugin](https
         }]),
         new WebpackBinPermission(),
       ]
+```
 
 And then when [serverless-webpack]() builds it will automatically copy everything in the bin folder and set the executable permissions correctly.
 
@@ -103,13 +113,17 @@ To make an executable ready-to-run without referencing its path, we have to set 
 
 Thats actually really easy. According to [this official aws post]() we can do it by just putting this line at the top of our handler code:
 
+```js
     process.env.PATH = `${process.env.PATH}:${process.env.LAMBDA_TASK_ROOT}/bin`;
+```
 
 But I like to also wrap it around some logic so it doesnt interfere with testing:
 
+```js
     if (process.env.LAMBDA_TASK_ROOT) {
       process.env.PATH = `${process.env.PATH}:${process.env.LAMBDA_TASK_ROOT}/bin`;
     }
+```
 
 ### Wrap it up
 

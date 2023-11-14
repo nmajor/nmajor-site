@@ -17,16 +17,15 @@ Middleware is one of the most powerful and useful features of redux. If you're u
 
 Today we're going to use it to make a clean and powerful way to manage our socket.io events. Basically we want to subscribe to specific events and then dispatch specific redux actions anytime those events are broadcast to us from the socket.io server.
 
-{: .lead}  
-<!–-break-–>
-
 Check out the [redux middleware documentation here](https://redux.js.org/advanced/middleware "https://redux.js.org/advanced/middleware") The code below is inspired by reading through the source of [this example redux app](https://github.com/erikras/react-redux-universal-hot-example "https://github.com/erikras/react-redux-universal-hot-example"), specifically [this middleware](https://github.com/erikras/react-redux-universal-hot-example/blob/master/src/redux/middleware/clientMiddleware.js "https://github.com/erikras/react-redux-universal-hot-example/blob/master/src/redux/middleware/clientMiddleware.js"), so you may also want to check that out as well.
 
 ### Typical Redux Actions
 
 Redux actions, by default, looks like this:
 
+```js
     { type: 'MY_ACTION_TYPE' ...some_data }
+```
 
 Redux actions have 1 required attribute, `type`. Anything else is just extra and is usually meant to be used by the reducer to mutate the state.
 
@@ -38,6 +37,7 @@ Specifically we are going to create a new kind of action that will start listeni
 
 First lets make a middleware function, you'll want to export this function from a file. I called my file \`socketMiddleware.js\`:
 
+```js
     import io from 'socket.io-client';
     
     export default function socketMiddleware() {
@@ -70,6 +70,7 @@ First lets make a middleware function, you'll want to export this function from 
         return socket.on(event, handleEvent);
       };
     }
+```
 
 Lets break down this code:
 
@@ -89,6 +90,7 @@ Also notice that the function that we are exporting is returning another functio
 
 Then we have to apply our new middlware. Check the [redux documentation](https://redux.js.org/advanced/middleware#attempt-6-naively-applying-the-middleware "https://redux.js.org/advanced/middleware#attempt-6-naively-applying-the-middleware") for how to do this. But you will probably need to do something like this when setting up your store:
 
+```js
     import { createStore, applyMiddleware } from 'redux';
     import socketMiddleware from './middleware/socketMiddleware';
     import rootReducer from './reducers/index';
@@ -97,6 +99,7 @@ Then we have to apply our new middlware. Check the [redux documentation](https:/
       rootReducer,
       applyMiddleware(socketMiddleware())
     );
+```
 
 Since other file is actually exporting a higher-order function, don't forget to execute the socketMiddleware function when applying it to redux. This will also create the socket.io connection only once when the store loads so we don't have to worry about creating a new connection every time.
 
@@ -106,6 +109,7 @@ We now have access to a new type of action that has new required attributes. If 
 
 Here are some example action creators using our new middleware.
 
+```js
     export function subscribeMessages() {
       return {
         event: 'message',
@@ -130,6 +134,7 @@ Here are some example action creators using our new middleware.
         }),
       });
     }
+```
 
 You'll notice these actions don't even have the required `type` attribute, this is because when they are dispatched we hijack the action and do out own thing, so these particular actions never makes it to the reducer.
 

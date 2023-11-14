@@ -27,23 +27,29 @@ In my case, I'm authenticating with Microsofts Oauth2 service. and the tokens ar
 
 I've decided to store my auth tokens in redux under `state.auth.tokens`, so my preloadedState object will look like this:
 
+```js
     const preloadedState = {
       auth: {
         tokens: { /* Auth token data goes here */ }
       }
     }
+```
 
 Then we set that as the value of the `window.__PRELOADED_STATE__`, in the server rendered html like this (Making sure to include these lines BEFORE loading in the client js bundle):
 
+```html
     <script>
       window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
       
       /* The string replace is to prevent injections into our preloaded state. Check the redux server rendering docs for more info */
     </script>
+```
 
 Then when loading the store, load in the `window.__PRELOADED_STATE__` as the initial state when creating the redux store:
 
+```js
     const store = createStore(reducer, window.__PRELOADED_STATE__)
+```
 
 ### Sync Auth State to localStorage
 
@@ -51,6 +57,7 @@ Thanks again to [this post](https://michaelwashburnjr.com/best-way-to-store-toke
 
 I made a function that will serialize and set the localStorage variables, and then call that function from `store.subscribe`
 
+```js
     function setAuthState(state) {
       try {
         localStorage.setItem('state.auth.tokens', JSON.stringify((state.auth || {}).tokens));
@@ -60,6 +67,7 @@ I made a function that will serialize and set the localStorage variables, and th
     store.subscribe(() => {
       setAuthState(store.getState())
     });
+```
 
 Be sure to checkout the [documentation for store.subscribe](https://redux.js.org/api/store#subscribe). You can also checkout [this video](https://egghead.io/lessons/javascript-redux-persisting-the-state-to-the-local-storage) by Dan Abramov on how to use subscribe to store the state into localStorage.
 
@@ -69,6 +77,7 @@ Some other libraries for watching the state for mutations are [redux-watch](http
 
 Then I made a function to get and deserialize the state from localStorage:
 
+```js
     function getAuthState() {
       try {
         const tokens = JSON.parse(localStorage.getItem('state.auth.tokens')) || undefined;
@@ -77,13 +86,16 @@ Then I made a function to get and deserialize the state from localStorage:
         return { auth: { tokens, user } }
       } catch (err) { return undefined; }
     }
+```
 
 Then change our create store to something like this:
 
+```js
     const store = createStore(
       reducer,
       { ...getAuthState(), ...window.__PRELOADED_STATE__ }
      )
+```
 
 And I was able to refresh the page and the auth tokens persist. So it works!
 
@@ -101,6 +113,7 @@ You'll also notice that I loaded my tokens with an `expires_at` attribute to hel
 
 The middleware is in a file called `requestMiddleware.js` and looks something like this like this:
 
+```js
     export default function requestMiddleware() {
       return ({ dispatch, getState }) => next => (action) => {
         const {
@@ -127,9 +140,11 @@ The middleware is in a file called `requestMiddleware.js` and looks something li
         return request(tokens);
       };
     }
+```
 
 Dont forget to apply the middleware:
 
+```js
     import { createStore, applyMiddleware } from 'redux';
     import requestMiddleware from './middleware/requestMiddleware';
     import rootReducer from './reducers/index';
@@ -138,9 +153,11 @@ Dont forget to apply the middleware:
       rootReducer,
       applyMiddleware(requestMiddleware())
     );
+```
 
 Add a reducer to capture the `SET_TOKEN` action:
 
+```js
     export default function reducer(state = initialState, action = {}) {
       switch (action.type) {
         case SET_TOKENS:
@@ -152,9 +169,11 @@ Add a reducer to capture the `SET_TOKEN` action:
           return state;
       }
     }
+```
 
 And now we can dispatch actions like this:
 
+```js
     export default function sendAnyRequest() {
       return (dispatch) => {
         return {
@@ -166,6 +185,7 @@ And now we can dispatch actions like this:
         }
       }
     }
+```
 
 ### Wrap it up
 
@@ -177,6 +197,7 @@ I highly recommend you read through the code of this project [erikras/react-redu
 
 As I said, I used that example heavily when setting up my redux store. Here is what my middleware file looks like:
 
+```js
     import { SIGN_OUT, SET_TOKENS } from '../modules/auth';
     
     export default function clientMiddleware(client) {
@@ -232,15 +253,18 @@ As I said, I used that example heavily when setting up my redux store. Here is w
         return actionPromise;
       };
     }
+```
 
 And I can dispatch really clean actions that look like this:
 
+```js
     export function loadOne(_id) {
       return {
         types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],
         promise: client => client.get('/items/'),
       };
     }
+```
 
 And the tokens are automatically refreshed and persisted.
 

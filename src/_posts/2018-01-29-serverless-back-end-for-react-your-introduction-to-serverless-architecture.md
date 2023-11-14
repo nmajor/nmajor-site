@@ -110,14 +110,16 @@ Now that you have everything set up, let's create our back-end by running this c
 
 This should create a new folder for us called `business-cardistry`. Let's go into that folder and have a look around.
 
-    $ cd business-cardistry
-    $ ls -lah
-    total 24
-    drwxr-xr-x    5 nmajor  staff   160B Dec 27 13:37 .
-    drwxr-xr-x  110 nmajor  staff   3.4K Dec 27 13:37 ..
-    -rw-r--r--    1 nmajor  staff    86B Dec 27 13:37 .gitignore
-    -rw-r--r--    1 nmajor  staff   466B Dec 27 13:37 handler.js
-    -rw-r--r--    1 nmajor  staff   2.8K Dec 27 13:37 serverless.yml
+```bash
+$ cd business-cardistry
+$ ls -lah
+total 24
+drwxr-xr-x    5 nmajor  staff   160B Dec 27 13:37 .
+drwxr-xr-x  110 nmajor  staff   3.4K Dec 27 13:37 ..
+-rw-r--r--    1 nmajor  staff    86B Dec 27 13:37 .gitignore
+-rw-r--r--    1 nmajor  staff   466B Dec 27 13:37 handler.js
+-rw-r--r--    1 nmajor  staff   2.8K Dec 27 13:37 serverless.yml
+```
 
 As you can see, aside from `.gitignore`, we only have two files, `handler.js` and `serverless.yml`. Later, this file structure can grow into any structure we need to keep our code organized, but everything comes back to these two files.
 
@@ -125,61 +127,69 @@ The best way to learn how these files work is to dive in and change them a bit t
 
 I opened up `serverless.yml` and removed all of the comments, so now we have something like this (I added some annotations):
 
-    # serverless.yml
-    
-    service: business-cardistry # Name of our service
-    
-    provider:
-      name: aws # AWS is our FaaS provider
-      runtime: nodejs6.10 # The language our functions are using
-    
-    functions:  # This is our list of functions
-      hello:  # We have a function named hello
-        handler: handler.hello  # references a function called hello in handler.js
+```yaml
+# serverless.yml
+
+service: business-cardistry # Name of our service
+
+provider:
+  name: aws # AWS is our FaaS provider
+  runtime: nodejs6.10 # The language our functions are using
+
+functions:  # This is our list of functions
+  hello:  # We have a function named hello
+    handler: handler.hello  # references a function called hello in handler.js
+```
 
 Let's modify our `hello` function by renaming it to `pdf` and connecting it to an API event. We do that by modifying our `functions` section to look like this:
 
-    functions:
-      pdf:
-        handler: handler.pdf
-        events:
-          - http:
-              path: pdf
-              method: post
+```yaml
+functions:
+  pdf:
+    handler: handler.pdf
+    events:
+      - http:
+          path: pdf
+          method: post
+```
 
 As you can see, we added an `events` level to our `hello` section. We set the path to `pdf` and the method to `post`. This means we can trigger this event by sending a post request to _some-url-goes-here/pdf_. It looks a lot like a routing system in a traditional web framework, but again, it's being handled at the infrastructure level.
 
 Now, let's take a look at `handler.js`.
 
-    # handler.js
-    'use strict';
-    
-    module.exports.hello = (event, context, callback) => {
-      const response = {
-        statusCode: 200,
-        body: JSON.stringify({
-          message: 'Go Serverless v1.0! Your function executed successfully!',
-          input: event,
-        }),
-      };
-    
-      callback(null, response);
-    };
+```javascript
+# handler.js
+'use strict';
+
+module.exports.hello = (event, context, callback) => {
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: 'Go Serverless v1.0! Your function executed successfully!',
+      input: event,
+    }),
+  };
+
+  callback(null, response);
+};
+```
 
 Again, let's modify it by changing `hello` to `pdf`. Let's also change the body to only return the message. Now, the file should look like this:
 
-    'use strict';
-    
-    module.exports.pdf = (event, context, callback) => {
-      const response = {
-        statusCode: 200,
-        body: JSON.stringify({
-          message: 'Go Serverless v1.0! Your function executed successfully!',
-        }),
-      };
-    
-      callback(null, response);
-    };
+```javascript
+'use strict';
+
+module.exports.pdf = (event, context, callback) => {
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: 'Go Serverless v1.0! Your function executed successfully!',
+    }),
+  };
+
+  callback(null, response);
+};
+```
 
 Alright, now `serverless.yml` defines a function called `pdf`, which is connected to the `pdf` function in `handler.js`. We now should have everything we need to deploy and send a request.
 
@@ -189,39 +199,45 @@ There actually isn't any straightforward way to run your serverless script local
 
 You can deploy it with the command:
 
-    serverless deploy -s dev
+```bash
+serverless deploy -s dev
+```
 
 The `-s dev` part tells it to set the stage to dev. The stage is how we differentiate production code from development code. We will deploy it to the production stage when everything is working.
 
 You should see something like this when you deploy:
 
-    $ serverless deploy -s dev
-    Serverless: Packaging service...
-    Serverless: Excluding development dependencies...
-    Serverless: Uploading CloudFormation file to S3...
-    Serverless: Uploading artifacts...
-    Serverless: Uploading service .zip file to S3 (327 B)...
-    Serverless: Validating template...
-    Serverless: Updating Stack...
-    Serverless: Checking Stack update progress...
-    ...............................
-    Serverless: Stack update finished...
-    Service Information
-    service: business-cardistry
-    stage: dev
-    region: us-east-1
-    stack: business-cardistry-dev
-    api keys:
-      None
-    endpoints:
-      POST - https://o20pczjzbl.execute-api.us-east-1.amazonaws.com/dev/pdf
-    functions:
-      pdf: business-cardistry-dev-pdf
+```bash
+$ serverless deploy -s dev
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service .zip file to S3 (327 B)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+...............................
+Serverless: Stack update finished...
+Service Information
+service: business-cardistry
+stage: dev
+region: us-east-1
+stack: business-cardistry-dev
+api keys:
+  None
+endpoints:
+  POST - https://o20pczjzbl.execute-api.us-east-1.amazonaws.com/dev/pdf
+functions:
+  pdf: business-cardistry-dev-pdf
+```
 
 There is the URL for our endpoint. Let's try it out!
 
-    $ curl -X POST https://o20pczjzbl.execute-api.us-east-1.amazonaws.com/dev/pdf
-    {"message":"Go Serverless v1.0! Your function executed successfully!"}
+```bash
+$ curl -X POST https://o20pczjzbl.execute-api.us-east-1.amazonaws.com/dev/pdf
+{"message":"Go Serverless v1.0! Your function executed successfully!"}
+```
 
 It works! I'm still blown away by how easy that is.
 
@@ -275,20 +291,22 @@ Select the Permissions tab, then Bucket Policy.
 
 Paste this into the editor. Be sure to replace _role-goes-here_ with the Role ARN.
 
-    {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Sid": "AllowPutForAllS3TestfilesLambda",
-                "Effect": "Allow",
-                "Principal": {
-                    "AWS": "role-goes-here"
-                },
-                "Action": "s3:*",
-                "Resource": "arn:aws:s3:::business-cardistry/*"
-            }
-        ]
-    }
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowPutForAllS3TestfilesLambda",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "role-goes-here"
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::business-cardistry/*"
+        }
+    ]
+}
+```
 
 Alright, this policy allows our custom role to perform all S3 actions on our new S3 bucket. S3 should be good to go!
 
@@ -298,8 +316,10 @@ Okay, now we can get to coding. Let's make our `pdf` function. It needs to recei
 
 Let's initialize npm and add some dependencies.
 
-    $ npm init -y
-    $ npm install --save html-pdf aws-sdk shortid
+```bash
+$ npm init -y
+$ npm install --save html-pdf aws-sdk shortid
+```
 
 The `html-pdf` library we are using requires the program `phantomjs` to be available as an executable binary. Normally, if we were running this script on a server, we would just install `phantomjs` on the server. Because this is serverless, we need to make sure that the runtime context has access to the `phantomjs` executable binary.
 
@@ -307,57 +327,61 @@ The way I handled this was to [download the binary](http://phantomjs.org/downloa
 
 Then, I made sure to add this to the serverless.yml file:
 
-    package:
-      include:
-        - bin/phantomjs
+```bash
+package:
+  include:
+    - bin/phantomjs
+```
 
 Now, when the function is deployed, it grabs that binary and uploads it while preserving its permissions and making it available in the runtime environment of the function.
 
 Okay. Let's get to the code. Here is what my `pdf` function looks like:
 
-    'use strict';
-    
-    const pdf = require('html-pdf');
-    const path = require('path');
-    const AWS = require('aws-sdk');
-    const shortid = require('shortid');
-    
-    module.exports.pdf = (event, context, callback) => {
-      const html = event.body;
-      pdf.create(html, {
-        height: '200px',
-        width: '350px',
-        phantomPath: path.resolve(process.env.LAMBDA_TASK_ROOT, 'bin/phantomjs'),
-      }).toBuffer((err, buffer) => {
-        if (err) return console.log(err);
-    
-        const fileKey = `cards/${shortid.generate()}.pdf`;
-        const bucket = 'business-cardistry';
-    
-        const s3 = new AWS.S3();
-        s3.putObject({
-          Bucket: bucket,
-          Key: fileKey,
-          Body: buffer,
-          ACL: 'public-read'
-        },function (resp) {
-          const fileUrl = s3.getSignedUrl('getObject', {
-            Bucket: bucket,
-            Key: fileKey,
-            Expires: 60,
-          });
-    
-          callback(null, {
-            statusCode: 200,
-            headers: {
-              'Content-Type' : 'application/json',
-              'Access-Control-Allow-Origin' : '*',
-            },
-            body: JSON.stringify({ fileUrl }),
-          });
-        });
+```javascript
+'use strict';
+
+const pdf = require('html-pdf');
+const path = require('path');
+const AWS = require('aws-sdk');
+const shortid = require('shortid');
+
+module.exports.pdf = (event, context, callback) => {
+  const html = event.body;
+  pdf.create(html, {
+    height: '200px',
+    width: '350px',
+    phantomPath: path.resolve(process.env.LAMBDA_TASK_ROOT, 'bin/phantomjs'),
+  }).toBuffer((err, buffer) => {
+    if (err) return console.log(err);
+
+    const fileKey = `cards/${shortid.generate()}.pdf`;
+    const bucket = 'business-cardistry';
+
+    const s3 = new AWS.S3();
+    s3.putObject({
+      Bucket: bucket,
+      Key: fileKey,
+      Body: buffer,
+      ACL: 'public-read'
+    },function (resp) {
+      const fileUrl = s3.getSignedUrl('getObject', {
+        Bucket: bucket,
+        Key: fileKey,
+        Expires: 60,
       });
-    };
+
+      callback(null, {
+        statusCode: 200,
+        headers: {
+          'Content-Type' : 'application/json',
+          'Access-Control-Allow-Origin' : '*',
+        },
+        body: JSON.stringify({ fileUrl }),
+      });
+    });
+  });
+};
+```
 
 I'm not going to go into the code too deeply, but it takes the body of the request and uses it to generate a PDF buffer. It then uploads the buffer to S3 and returns a signed URL for the uploaded object.
 
@@ -369,20 +393,28 @@ You'll notice that we don't need to specify any AWS credentials. It automaticall
 
 Since this endpoint simply receives HTML and returns a filepath, we should still be able to test it with a curl command. First, let's deploy to dev again.
 
-    serverless deploy -s dev
+```bash
+serverless deploy -s dev
+```
 
 The above deploy command will deploy the whole project. To deploy only one function, you can use the command:
 
-    serverless deploy function -f pdf -s dev
+```bash
+serverless deploy function -f pdf -s dev
+```
 
 If you run into any errors, you can check the logs for the `pdf` function with this command:
 
-    logs -f pdf -s dev
+```bash
+logs -f pdf -s dev
+```
 
 Now we can test it by sending another curl request with a string of HTML
 
-    $ curl -d '<h1>Hello PDF!</h1>' -X POST https://o20pczjzbl.execute-api.us-east-1.amazonaws.com/dev/pdf
-    {"fileUrl":"https://business-cardis...j2hJHSBQ%3D%3D"}
+```bash
+$ curl -d '<h1>Hello PDF!</h1>' -X POST https://o20pczjzbl.execute-api.us-east-1.amazonaws.com/dev/pdf
+{"fileUrl":"https://business-cardis...j2hJHSBQ%3D%3D"}
+```
 
 It works! When I paste in the fileUrl link into a browser, it downloads a PDF that looks like this:
 
@@ -392,32 +424,34 @@ Which is exactly what we expect.
 
 So now, let's deploy in production!
 
-    $ serverless deploy -s production
-    Serverless: Packaging service...
-    Serverless: Excluding development dependencies...
-    Serverless: Creating Stack...
-    Serverless: Checking Stack create progress...
-    .....
-    Serverless: Stack create finished...
-    Serverless: Uploading CloudFormation file to S3...
-    Serverless: Uploading artifacts...
-    Serverless: Uploading service .zip file to S3 (35.56 MB)...
-    Serverless: Validating template...
-    Serverless: Updating Stack...
-    Serverless: Checking Stack update progress...
-    ..............................
-    Serverless: Stack update finished...
-    Service Information
-    service: business-cardistry
-    stage: production
-    region: us-east-1
-    stack: business-cardistry-production
-    api keys:
-      None
-    endpoints:
-      POST - https://8103v1xvqk.execute-api.us-east-1.amazonaws.com/production/pdf
-    functions:
-      pdf: business-cardistry-production-pdf
+```bash
+$ serverless deploy -s production
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+.....
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service .zip file to S3 (35.56 MB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+..............................
+Serverless: Stack update finished...
+Service Information
+service: business-cardistry
+stage: production
+region: us-east-1
+stack: business-cardistry-production
+api keys:
+  None
+endpoints:
+  POST - https://8103v1xvqk.execute-api.us-east-1.amazonaws.com/production/pdf
+functions:
+  pdf: business-cardistry-production-pdf
+```
 
 Now, this created a whole new function in Lambda, so remember all of that talk about execution roles? We need to change the execution role of the production function to match the role of the dev function. That way the production function will have access to S3 as well..
 
@@ -427,8 +461,10 @@ So go back to the Lambda page in AWS, click on the new production function that 
 
 Once that's done, we can double check the production endpoint.
 
+```bash
     $ curl -d '<h1>Hello PDF!</h1>' -X POST https://8103v1xvqk.execute-api.us-east-1.amazonaws.com/production/pdf
     {"fileUrl":"https://business-cardis...j2hJHSBQ%3D%3D"}
+```
 
 Aaaaaand it works! Now after modifying the request URL in my React code, my app is complete!
 

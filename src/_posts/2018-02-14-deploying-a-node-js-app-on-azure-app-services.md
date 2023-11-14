@@ -42,7 +42,9 @@ This deployment user will be used when deploying your code. Basically we are goi
 
 Run this in the command line:
 
-    az webapp deployment user set --user-name <username> --password <password>
+```bash
+az webapp deployment user set --user-name <username> --password <password>
+```
 
 ### Create a resource group
 
@@ -50,7 +52,9 @@ Resource groups are basically just a way to group together resources so you can 
 
 Replace `<my-resource-group>` with a resource group name you want.
 
-    az group create --name <my-resource-group> --location westeurope
+```bash
+az group create --name <my-resource-group> --location westeurope
+```
 
 ### Create a service plan
 
@@ -60,19 +64,25 @@ The command below will create a `FREE` tier app that has about 1 GB of RAM. You 
 
 Also be sure to set your `<my-app-service-plan>` and also make sure you set `<my-resource-group>` to your resource group name from earlier.
 
-    az appservice plan create --name <my-app-service-plan> --resource-group <my-resource-group> --sku FREE
+```bash
+az appservice plan create --name <my-app-service-plan> --resource-group <my-resource-group> --sku FREE
+```
 
 ### Create the app
 
 Now we actually create the app, you have to give your app an `<app-name>` and then make sure you paste in all the other options from things you've created previously.
 
-    az webapp create --name <app-name> --resource-group <my-resource-group> --plan <my-app-service-plan>
+```bash
+az webapp create --name <app-name> --resource-group <my-resource-group> --plan <my-app-service-plan>
+```
 
 ### Configure git for deployment
 
 This command sill set up you app to be deployed using git. The response you get from this command will be a git url you can use as the git remote to deploy.
 
-    az webapp deployment source config-local-git --name <app-name> --resource-group <my-resource-group> --query url --output tsv
+```bash
+az webapp deployment source config-local-git --name <app-name> --resource-group <my-resource-group> --query url --output tsv
+```
 
 ### Configure startup script
 

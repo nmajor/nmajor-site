@@ -5,6 +5,8 @@ tags:
 - facebook
 hero: "/uploads/2018/03/21/So, let's take it to the streets and celebrate our freedom!.png"
 ---
+With the facebook API, page tokens can often be used in place of user tokens. This is very useful because if you are doing something with a business, its not ideal to have to use your own user token for everything. However, if you don't want to have to recreate a new token all the time, you have to go through the process of getting a long-lived page access token.
+
 **IMPORTANT! -** Make sure that your user has permissions to access both the Facebook page and the Facebook groups, and make sure that the Facebook groups are linked to the Facebook page!
 
 Now lets talk about some definitions:
@@ -41,15 +43,19 @@ Ok, then we need to exchange that short-lived token for a long-lived token, and 
 
 We need to make a GET request to the Facebook Graph API to the path `/oauth/access_token` with the following parameters:
 
-    /oauth/access_token?  
-        grant_type=fb_exchange_token&           
-        client_id={app-id}&
-        client_secret={app-secret}&
-        fb_exchange_token={short-lived-token-we-just-made} 
+```javascript
+/oauth/access_token?  
+    grant_type=fb_exchange_token&           
+    client_id={app-id}&
+    client_secret={app-secret}&
+    fb_exchange_token={short-lived-token-we-just-made} 
+```
 
 So make a string that looks like this:
 
-    /oauth/access_token?grant_type=fb_exchange_token&client_id=9382767696389008&client_secret=1aac234d48ce90uu57c1b579faa92f00ufa&fb_exchange_token=EAAcZBbBDPXSwBACfeRskLz5LJJCigZBZBDyr4pmZCcVsrpFaoDUDSXthSDzdq4bqO75iEE17TBbpxIyQ1eTR3OIfGq2KPZBloF4xJ0I1GU1hxOnCGJmZBVg0DXU4IrDgcURm4ceKE4M1ZAFdGNmt5y2shsETLxAEKwZD
+```javascript
+/oauth/access_token?grant_type=fb_exchange_token&client_id=9382767696389008&client_secret=1aac234d48ce90uu57c1b579faa92f00ufa&fb_exchange_token=EAAcZBbBDPXSwBACfeRskLz5LJJCigZBZBDyr4pmZCcVsrpFaoDUDSXthSDzdq4bqO75iEE17TBbpxIyQ1eTR3OIfGq2KPZBloF4xJ0I1GU1hxOnCGJmZBVg0DXU4IrDgcURm4ceKE4M1ZAFdGNmt5y2shsETLxAEKwZD
+```
 
 And paste it into here and you'll get your long-lived access token in the response:
 
@@ -59,7 +65,9 @@ Now that you have your long-lived user access token, we can exchange it by makin
 
 You need to take that long-lived user access token and paste it into the Access Token field then put this in the path field:
 
-    {fb-page-id}]/?fields=access_token
+```javascript
+{fb-page-id}]/?fields=access_token
+```
 
 Then you will get your long-lived page access token in the response!
 

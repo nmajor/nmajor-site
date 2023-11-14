@@ -17,7 +17,7 @@ Basically before I start any serious project I like to have a few things setup:
 * Folder structure
 * Testing
 
-I hope this isnt too obscure of a topic, but I'm not actually going to cover how to build a CRUD API, this is just an example starting boilerplate before you begin coding your project.
+I hope this isn't too obscure of a topic, but I'm not actually going to cover how to build a CRUD API, this is just an example starting boilerplate before you begin coding your project.
 
 I'm assuming you've at least tried using the serverless framework before. If you are new to serverless, I have an article that breaks it down from the beginning here:
 
@@ -48,16 +48,21 @@ If you dont use this starter, you have to add a lot of this stuff one by one by 
 
 First make sure you have the `serverless` module installed globally
 
+```bash
     yarn global add serverless
     # or
     npm install serverless -g
+```
 
 And then run this command to create a new serverless project using the starter:
 
+```bash
     $ serverless install --url https://github.com/AnomalyInnovations/serverless-nodejs-starter --name my-project
+```
 
 It gives us a `serverless.yml` file that looks like this:
 
+```yml
     service: my-project
     
     plugins:
@@ -82,9 +87,11 @@ It gives us a `serverless.yml` file that looks like this:
           - http:
               path: hello
               method: get
+```
 
 And a handler.js file that looks like this:
 
+```js
     export const hello = async (event, context, callback) => {
       const response = {
         statusCode: 200,
@@ -101,10 +108,12 @@ And a handler.js file that looks like this:
         resolve(`${rest.copy} (with a delay)`);
       }, time * 1000)
     );
+```
 
 It also gives us a test folder with an example test.
 
-    # tests/handler.test.js
+```js
+    // tests/handler.test.js
     
     import * as handler from '../handler';
     
@@ -121,17 +130,21 @@ It also gives us a test folder with an example test.
 
 We can run this command to start the offline server for a good development workflow:
 
+```bash
     serverless offline start
+```
 
 This will start an offline server that you can use to make API requests and test all the endpoints.
 
 I also like to add a script in the `package.json` file to make this easy to launch:
 
+```json
       "scripts": {
       	"start": "serverless offline start",
         "lint": "node_modules/.bin/eslint .",
         "test": "NODE_ENV=test node_modules/.bin/mocha --recursive --require babel-core/register"
       },
+```
 
 ### Add ESLint
 
@@ -139,59 +152,78 @@ I always work with a linter these days, there's no better way to keep clean code
 
 Lets add `eslint` and some plugins:
 
-    , yarn add --dev eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-mocha eslint-plugin-promise
+```bash
+    yarn add --dev eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-mocha eslint-plugin-promise
+```
 
 And then make a new `.eslintrc.json` file in the root of our project.
 
+```bash
     touch .eslintrc.json
+```
 
 And add this to the new file:
 
+```json
     {
       "extends": ["airbnb/base", "plugin:promise/recommended"],
       "plugins": ["promise"],
       "rules": {}
     }
+```
 
 Add a `.eslintignore` file:.
 
+```bash
     touch .eslintignore
+```
 
 And ignore the webpack config:
 
+```bash
     # .eslintignore
     
     webpack.config.js
+```
 
 And then add a `lint` script to our `package.json`:
 
+```json
       "scripts": {
       	"start": "serverless offline start",
         "lint": "node_modules/.bin/eslint .",
       },
+```
 
 Then you can run the linter with this command:
 
+```bash
     yarn lint
     # or 
     npm run lint
+```
 
 ### API Folder Structure
 
 When I'm building a serverless api I like to give my functions, paths, and folder a api-like structure. So I'll create some directories to organize my handlers. This may be a bit overkill for small projects, but I dont think there are any downsides of having this kind of extra organization right off the bat.
 
+```bash
     mkdir -p handlers/api/v1/todos
+```
 
 I think you can think of these handlers as controllers, and so if you're building CRUD endpoints for a model, you can add a different file for each of the 5 main API actions:
 
+```bash
     touch handlers/api/v1/todos/index.js
     touch handlers/api/v1/todos/show.js
     touch handlers/api/v1/todos/create.js
     touch handlers/api/v1/todos/update.js
     touch handlers/api/v1/todos/delete.js
+```
 
 Then the functions part of your `serverless.yml` file would look something like this:
 
+```yml
     functions:
       api/v1/todos/index:
         handler: handlers/api/v1/todos/index.default
@@ -223,22 +255,28 @@ Then the functions part of your `serverless.yml` file would look something like 
           - http:
               path: api/v1/todos/{id}
               method: delete
+```
 
 As you can see this is a pretty typical REST setup.
 
 We can now remove our original handler.js file since we dont need it anymore:
 
+```bash
     rm handler.js
+```
 
 We wont be using this today, but lets also create a `models` folder where I can put our models:
 
+```bash
     mkdir models
     touch models/todo.js
+```
 
 Then the individual handlers will include the models to handle the crud operations.
 
 Now I'm going to add a basic handler for `todos/index.js` so we have something to test:
 
+```js
     # handlers/api/v1/index.js
     
     export default (event, context, callback) => {
@@ -251,6 +289,7 @@ Now I'm going to add a basic handler for `todos/index.js` so we have something t
     
       callback(null, response);
     };
+```
 
 And if you are following along, you'll have to add an export to all the handler files in order to run the offline server.
 
@@ -258,23 +297,28 @@ And if you are following along, you'll have to add an export to all the handler 
 
 By default the starter comes with `jest` but I prefer `mocha` so lets swap `jest` for `mocha` and add a bit of `chai` for the assertions.
 
+```bash
     mv tests test
     rm test/handler.test.js
     yarn remove --dev jest
     yarn add --dev mocha chai
     touch test/test_helper.js
+```
 
 Now lets add some test files for our endpoints:
 
+```bash
     mkdir -p test/api/v1/todos/
     touch test/api/v1/todos/index.test.js
     touch test/api/v1/todos/show.test.js
     touch test/api/v1/todos/create.test.js
     touch test/api/v1/todos/update.test.js
     touch test/api/v1/todos/delete.test.js
+```
 
 And we'll only add 1 test for now for our `todos/index` handler:
 
+```js
     import { expect } from 'chai';
     
     import todosIndex from '../../../../handlers/api/v1/todos';
@@ -293,29 +337,37 @@ And we'll only add 1 test for now for our `todos/index` handler:
         todosIndex(event, context, callback);
       });
     });
+```
 
 Then we can run it by first adding this script to our `package.json` file:
 
+```json
       "scripts": {
       	"start": "serverless offline start",
         "lint": "node_modules/.bin/eslint .",
         "test": "NODE_ENV=test node_modules/.bin/mocha --recursive --require babel-core/register"
       },
+```
 
 We have to add the `--recursive` tag so it will find the tests in our subfolders, and the `--require babel-core/register` tag to make ES7 work with our tests.
 
 Then we can run our tests with the command:
 
+```bash
     yarn test
     # or
     npm test
+```
 
 Now we also need a different `.eslintrc.json` file for our testing so if we put a new one in our test tile the tests will play by different eslint rules.
 
+```bash
     touch test/.eslintrc.json
+```
 
 With these contents so it will ignore mocha keywords:
 
+```json
     {
       "extends": ["airbnb/base", "plugin:promise/recommended"],
       "plugins": ["promise", "mocha"],
@@ -324,24 +376,31 @@ With these contents so it will ignore mocha keywords:
       },
       "rules": {}
     }
+```
 
 ### Wrap it up
 
 Now we can start our offline server:
 
+```bash
     serverless offline start
+```
 
 We can test our code:
 
+```bash
     yarn test
     # or
     npm test
+```
 
 ...and we can lint our code:
 
+```bash
     yarn lint
     # or
     npm run lint
+```
 
 And we have some good folder structure to start building our API.
 

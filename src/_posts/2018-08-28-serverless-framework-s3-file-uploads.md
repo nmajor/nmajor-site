@@ -19,6 +19,7 @@ According to [this post](https://serverless.com/framework/docs/providers/aws/gui
 
 Then you can give the default user/role access to a service like S3 by simply adding this to the `serverless.yml` file:
 
+```yml
     provider:
       ...
       iamRoleStatements:
@@ -26,6 +27,7 @@ Then you can give the default user/role access to a service like S3 by simply ad
           Action:
            - "s3:*"
           Resource: { "Fn::Join": ["", ["arn:aws:s3:::BUCKET_NAME", "/*" ] ] }
+```
 
 Just be sure to replace `BUCKET_NAME` with the name of your bucket. This gives the lambda function full access to this bucket.
 

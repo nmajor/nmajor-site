@@ -19,17 +19,15 @@ Middleware is one of the most powerful and useful features of redux. If you're u
 
 Today we're going to use it to make a clean and powerful way to manage our subscriptions to different Action Cable channels+rooms. This also means taking the data sent to use through action cable and dispatching the appropriate redux actions to mutate the state.
 
-{: .lead}  
-<!–-break-–>
-
 If you are unfamiliar with redux middleware, check out the [documentation here](https://redux.js.org/advanced/middleware "https://redux.js.org/advanced/middleware"). The code below is inspired by reading through the source of [this example redux app](https://github.com/erikras/react-redux-universal-hot-example "https://github.com/erikras/react-redux-universal-hot-example"), specifically [this middleware](https://github.com/erikras/react-redux-universal-hot-example/blob/master/src/redux/middleware/clientMiddleware.js "https://github.com/erikras/react-redux-universal-hot-example/blob/master/src/redux/middleware/clientMiddleware.js"), so you may also want to check that out as well.
 
 ### Typical Redux Actions
 
 Basically redux action, by default, looks like this:
 
+```json
     { type: 'MY_ACTION_TYPE' ...some_data }
-
+```
 Redux actions have 1 required attribute, `type`. Anything else is just extra and is usually meant to be used by the reducer to mutate the state.
 
 By using redux middleware we can define our own action patterns and structures. The middleware will check if the action has other specific attributes and handle that action differently than the others. That way all we have to do to trigger some custom redux behavior is dispatch an action with our specific attributes and it will automatically be handled differently.
@@ -40,6 +38,7 @@ Specifically we are going to create a new kind of action that will subscribe or 
 
 First lets make a middleware function, you'll want to export this function from a file. I called my file \`cableMiddleware.js\`:
 
+```js
     import ActionCable from 'actioncable';
     
     export default function cableMiddleware() {
@@ -77,6 +76,7 @@ First lets make a middleware function, you'll want to export this function from 
         return cable.subscriptions.create({ channel, room }, { received });
       };
     }
+```
 
 Lets break down this code:
 
@@ -96,6 +96,7 @@ Also notice that the function that we are exporting is returning another functio
 
 Then we have to apply our new middlware. Check the [redux documentation](https://redux.js.org/advanced/middleware#attempt-6-naively-applying-the-middleware "https://redux.js.org/advanced/middleware#attempt-6-naively-applying-the-middleware") for how to do this. But you will probably need to do something like this when setting up your store:
 
+```js
     import { createStore, applyMiddleware } from 'redux';
     import cableMiddleware from './middleware/cableMiddleware';
     import rootReducer from './reducers/index';
@@ -104,6 +105,7 @@ Then we have to apply our new middlware. Check the [redux documentation](https:/
       rootReducer,
       applyMiddleware(cableMiddleware())
     );
+```
 
 Since other file is actually exporting a higher-order function, don't forget to execute the cableMiddleware function when applying it to redux. This will also create the Action Cable connection only once when the store loads so we don't have to worry about creating a new connection every time.
 
@@ -113,6 +115,7 @@ We now have access to a new type of action that has new required attributes. Bas
 
 Here are some example action creators using our new middleware.
 
+```js
     export function subscribeConversation(conversationId) {
       return {
         channel: 'conversations',
@@ -140,6 +143,7 @@ Here are some example action creators using our new middleware.
         }),
       });
     }
+```
 
 You'll notice these actions don't even have the required `type` attribute, this is because when they are dispatched we hijack the action and do out own thing, so these particular actions never makes it to the reducer.
 
