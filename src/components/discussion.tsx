@@ -2,9 +2,21 @@
 
 import Giscus from "@giscus/react";
 import { useTheme } from "next-themes";
+import { useMemo } from "react";
 
 export function Discussion() {
-  const { theme } = useTheme();
+  const { theme: themeSetting } = useTheme();
+
+  const theme = useMemo(() => {
+    if (themeSetting === "system") {
+      const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+      if (systemDark.matches) {
+        return "dark";
+      }
+    }
+
+    return themeSetting;
+  }, [themeSetting]);
 
   return (
     <Giscus
