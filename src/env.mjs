@@ -18,6 +18,10 @@ export const env = createEnv({
   client: {
     // NEXT_PUBLIC_CLIENTVAR: z.string(),
     NEXT_PUBLIC_MAILCHIMP_ACTION_URL: z.string(),
+    NEXT_PUBLIC_GISCUS_REPO: z.string(),
+    NEXT_PUBLIC_GISCUS_REPO_ID: z.string(),
+    NEXT_PUBLIC_GISCUS_CATEGORY: z.string(),
+    NEXT_PUBLIC_GISCUS_CATEGORY_ID: z.string(),
   },
 
   /**
@@ -28,6 +32,10 @@ export const env = createEnv({
     NODE_ENV: process.env.NODE_ENV,
     NEXT_PUBLIC_MAILCHIMP_ACTION_URL:
       process.env.NEXT_PUBLIC_MAILCHIMP_ACTION_URL,
+    NEXT_PUBLIC_GISCUS_REPO: process.env.NEXT_PUBLIC_GISCUS_REPO,
+    NEXT_PUBLIC_GISCUS_REPO_ID: process.env.NEXT_PUBLIC_GISCUS_REPO_ID,
+    NEXT_PUBLIC_GISCUS_CATEGORY: process.env.NEXT_PUBLIC_GISCUS_CATEGORY,
+    NEXT_PUBLIC_GISCUS_CATEGORY_ID: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation.
