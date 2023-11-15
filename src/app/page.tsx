@@ -5,7 +5,6 @@ import { Container } from "@/components/container";
 import { type Post, getAllPosts } from "@/lib/api";
 import { formatDate } from "@/lib/format-date";
 import { Icons } from "@/components/icons";
-import { Button } from "@/components/ui/button";
 import bluehostLogo from "@/images/bluehost_logo.jpeg";
 import pvLogo from "@/images/pv_logo.jpeg";
 import lewagonLogo from "@/images/le_wagon_logo.jpeg";
@@ -14,10 +13,7 @@ import fluidLogo from "@/images/fluid_logo.jpeg";
 import holomeetingLogo from "@/images/holomeetin_logo.jpeg";
 import thrivelotLogo from "@/images/thrivelot_logo.jpeg";
 import { Card } from "@/components/card";
-import { Input } from "@/components/ui/input";
 import { siteConfig } from "@/config/site";
-import { env } from "@/env.mjs";
-import jsonp from 'jsonp';
 import { Newsletter } from "@/components/newsletter";
 
 function Post({ post }: { post: Post }) {

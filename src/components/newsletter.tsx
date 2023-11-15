@@ -9,7 +9,7 @@ import { Icons } from "./icons";
 import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
 
 export function Newsletter() {
-  const { loading, error, success, message, handleSubmit } = useMailChimpForm(
+  const { loading, message, handleSubmit } = useMailChimpForm(
     env.NEXT_PUBLIC_MAILCHIMP_ACTION_URL,
   );
 
