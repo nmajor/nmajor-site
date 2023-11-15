@@ -2,6 +2,7 @@ import { Container } from "@/components/container";
 import { Prose } from "@/components/prose";
 import { type Post } from "@/lib/api";
 import { formatDate } from "@/lib/format-date";
+import { Discussion } from "@/components/discussion";
 
 export function PostLayout({
   post,
@@ -22,7 +23,7 @@ export function PostLayout({
               <div className="flex gap-3 pt-1">
                 <time
                   dateTime={post.date}
-                  className="text-muted-foreground order-first flex items-center pr-2 text-base"
+                  className="order-first flex items-center pr-2 text-base text-muted-foreground"
                 >
                   <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
                   <span className="ml-3">{formatDate(post.date)}</span>
@@ -37,14 +38,15 @@ export function PostLayout({
                 ))}
               </div>
               {post.readTime && (
-                <div className="text-accent-foreground pt-3 text-sm italic">
+                <div className="pt-3 text-sm italic text-accent-foreground">
                   ~{post.readTime}
                 </div>
               )}
             </header>
-            <Prose className="mt-8" data-md-content>
+            <Prose className="mb-12 mt-8" data-md-content>
               {children}
             </Prose>
+            <Discussion />
           </article>
         </div>
       </div>
